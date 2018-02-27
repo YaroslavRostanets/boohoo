@@ -1,17 +1,59 @@
 header {
   height: 120px;
   padding: 10px 45px;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
   .top-line {
     display: flex;
     justify-content: space-between;
   }
+  .center {
+    padding-top: 8px;
+  }
   .selected-flag {
     width: 30px;
     height: 22px;
+    margin-right: 5px;
     img {
       max-width: 100%;
       max-height: 100%;
       display: block;
+    }
+  }
+  .search-form-wrap {
+    position: relative;
+    margin-right: 50px;
+  }
+  .header-search-btn {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    font-size: 22px;
+    &:before {
+      content: "";
+      font-family: icons!important;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  .search-input {
+    border: transparent;
+    width: 180px;
+    height: 37px;
+    border-bottom: 1px solid #000000;
+    display: none;
+    &::placeholder {
+      text-transform: uppercase;
+      font-size: 8px !important;
+      color: #000000 !important;
     }
   }
   .logo {
@@ -38,17 +80,32 @@ header {
       -webkit-font-smoothing: antialiased;
     }
   }
+  .country-selector {
+    margin-right: 55px;
+  }
+  .current-country {
+    display: flex;
+    align-items: center;
+  }
+  .fa-caret-down {
+    font-family: "FontAwesome";
+    font-style: normal;
+  }
   .left-part {
     display: flex;
+    padding-top: 15px;
   }
   .right-part {
     display: flex;
+    padding-top: 8px;
   }
   .header-wishlist {
+    margin-right: 55px;
+    padding-top: 6px;
     & > a {
       font-size: 22px;
       color: #000;
-
+      text-decoration: none;
     }
   }
   .icon-wishlist {
@@ -73,15 +130,50 @@ header {
   .mini-cart-link {
     font-size: 22px;
     color: #000;
-    text-align: none;
+    text-decoration: none;
+    position: relative;
+    .js-minicart-quantity {
+      position: absolute;
+      font-size: 13px;
+      width: 100%;
+      text-align: center;
+      color: #000000;
+      bottom: 6px;
+    }
     &:before {
-      content: "";
+      content: "";
+      font-size: 30px;
       font-family: icons!important;
       speak: none;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 100;
       font-variant: normal;
       text-transform: none;
+    }
+  }
+  .main-navigation {
+    display: flex;
+    .menu-category {
+      margin: 15px 0 5px;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      width: 100%;
+      .has-submenu {
+        margin: 0 45px;
+      }
+      a {
+        text-decoration: none;
+        padding: 12px;
+        letter-spacing: 1.8px;
+        display: inline-block;
+        font-size: 18px;
+        line-height: 18px;
+        overflow: visible;
+        width: 100%;
+        color: #000000;
+      }
     }
   }
 }
