@@ -39,4 +39,28 @@ $(document).ready(function(){
     })();
     /*--конец Выбор языка--*/
 
+    /*--форма поиска--*/
+    (function(){
+        var form = $('.js-search-form-wrap');
+        var input = form.find('.js-search-input');
+        console.log(input);
+        $('.js-search-icon').on('click', function(e){
+            e.preventDefault();
+            if(!$(this).closest('.search-form-wrap').hasClass('opened')
+                && input.val() == ''){
+                form.addClass('opened');
+                form.find('.js-search-input').fadeIn(200);
+            } else {
+                
+            }
+        });
+        $(document).mouseup(function (e) {
+            if (form.has(e.target).length === 0){
+                form.removeClass('opened');
+            }
+        });
+    })();
+
+    /*--конец Форма поиска--*/
+
 });

@@ -33,6 +33,7 @@ header {
     top: 0;
     height: 40px;
     font-size: 22px;
+    cursor: pointer;
     &:before {
       content: "";
       font-family: icons!important;
@@ -43,17 +44,24 @@ header {
       text-transform: none;
       -webkit-font-smoothing: antialiased;
     }
+    &:focus, &:active {
+      outline: none;
+    }
   }
   .search-input {
     border: transparent;
     width: 180px;
     height: 37px;
     border-bottom: 1px solid #000000;
+    padding-left: 8px;
     display: none;
     &::placeholder {
       text-transform: uppercase;
-      font-size: 8px !important;
-      color: #000000 !important;
+      font-size: 11px !important;
+      color: #757575 !important;
+    }
+    &:focus, &:active {
+      outline: none;
     }
   }
   .logo {
