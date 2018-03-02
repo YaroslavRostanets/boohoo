@@ -83,9 +83,57 @@ header {
   .country-selector {
     margin-right: 55px;
   }
+  .one-country {
+    display: flex;
+    width: 33.33%;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
   .current-country {
     display: flex;
     align-items: center;
+    position: relative;
+    cursor: pointer;
+    &.open {
+      .current-country-dropdown {
+        display: block;
+      }
+      .fa-caret-down {
+        transform: rotate(-180deg);
+      }
+    }
+    .current-country-dropdown {
+      position: absolute;
+      background: #FFFFFF;
+      border: 1px solid #000000;
+      top: calc( 100% + 2px );
+      left: 0;
+      width: 330px;
+      padding: 20px;
+      display: none;
+    }
+    .continent {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 12px;
+      margin: 0 0 15px 0;
+      width: 100%;
+    }
+    .img-cont {
+      width: 30px;
+      height: 22px;
+      margin-right: 10px;
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
   }
   .fa-caret-down {
     font-family: "FontAwesome";

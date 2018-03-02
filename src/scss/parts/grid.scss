@@ -1,0 +1,44 @@
+.flex-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+.col-1 {
+  width: 100%;
+  & > a {
+    width: 100%;
+    img {
+      display: block;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+.col-3 {
+  width: 33.333%;
+  padding: 0 20px;
+  & > a {
+    width: 100%;
+    img {
+      display: block;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+.col-2 {
+  width: 50%;
+  padding: 0 20px;
+  & > a {
+    width: 100%;
+    img {
+      display: block;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+    /*--Слайдер в табах Главная --*/
     var tabSliderOptions = {
         infinite: true,
         slidesToShow: 5,
@@ -21,5 +22,21 @@ $(document).ready(function(){
     });
 
     $('.tabs-slider .one-but.active').click();
+
+    /*--конец Слайдер в табах Главная --*/
+
+    /*--Выбор языка--*/
+    (function(){
+        $('.js-current-country').on('click', function(){
+            $(this).addClass('open');
+        });
+        $(document).mouseup(function (e) {
+            var container = $(".js-current-country");
+            if (container.has(e.target).length === 0){
+                container.removeClass('open');
+            }
+        });
+    })();
+    /*--конец Выбор языка--*/
 
 });

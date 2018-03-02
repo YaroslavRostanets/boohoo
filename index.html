@@ -20,11 +20,34 @@
                 <div class="top-line">
                     <div class="left-part">
                         <div class="country-selector">
-                            <div class="current-country">
+                            <div class="js-current-country current-country">
                                 <div class="selected-flag">
                                     <img src="dist/img/gb.svg" alt="">
                                 </div>
                                 <i class="fas fa-caret-down"></i>
+                                <div class="current-country-dropdown">
+                                    <div class="continent">
+                                        <h4 class="continent-name">Europe</h4>
+                                        <a href="javascript:void(0);" class="one-country">
+                                            <div class="img-cont">
+                                                <img src="dist/img/ua.svg" alt="">
+                                            </div>
+                                            UA ₴
+                                        </a>
+                                        <a href="javascript:void(0);" class="one-country">
+                                            <div class="img-cont">
+                                                <img src="dist/img/ru.svg" alt="">
+                                            </div>
+                                            RU ₽
+                                        </a>
+                                        <a href="javascript:void(0);" class="one-country">
+                                            <div class="img-cont">
+                                                <img src="dist/img/gb.svg" alt="">
+                                            </div>
+                                            EN $
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="">
@@ -100,7 +123,7 @@
         <div class="home-main">
             <div class="banners-below-nav-wrapper">
                 <div class="col-3">
-                    <div class="banner-below-nav-title">
+                    <div style="color: #ea0170;" class="banner-below-nav-title">
                         Over 15,000 Styles, 50% Off Or More!
                     </div>
                     <div class="banner-below-nav-subtitle">
@@ -114,8 +137,8 @@
                             NOW £5.99
                         </a>
                     </div>
-                    <div class="text-before-countdown">
-                        LIMITED TIME ONLY *t&cs apply
+                    <div class="banner-below-nav-subtitle">
+                        LIMITED TIME ONLY T&CS APPLY
                     </div>
                 </div>
                 <div class="col-3">
@@ -129,18 +152,26 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="full-banner">
-                <div class="container">
-                    <img src="dist/img/content/thumb1.jpg" alt="">
+            <div href="#" class="full-banner">
+                <div class="flex-container">
+                    <div class="col-1">
+                        <a href="#">
+                            <img src="dist/img/content/thumb1.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
-            </a>
-            <a href="#" class="full-banner">
-                <div class="container">
-                    <img src="dist/img/content/thumb2.jpg" alt="">
+            </div>
+            <div href="#" class="full-banner">
+                <div class="flex-container">
+                    <div class="col-1">
+                        <a href="#">
+                            <img src="dist/img/content/thumb2.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
-            </a>
+            </div>
             <div class="two-banners">
-                <div class="container">
+                <div class="flex-container">
                     <div class="col-2">
                         <a href="#">
                             <img src="dist/img/content/thumb3.jpg" alt="">
@@ -240,7 +271,7 @@
                 </div>
             </div>
             <div class="three-banners">
-                <div class="container">
+                <div class="flex-container">
                     <div class="col-3">
                         <a href="#">
                             <img src="dist/img/content/thumb5.jpg" alt="">
