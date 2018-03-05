@@ -1,0 +1,34 @@
+@media (max-width: 1300px) {
+  header {
+    .main-navigation {
+      .menu-category {
+        a {
+          font-size: 12px;
+          white-space: nowrap;
+        }
+        .has-submenu {
+          margin: 0 30px;
+        }
+      }
+      .level-2 li a {
+        white-space: normal;
+        font-size: 11px;
+      }
+    }
+  }
+  .banners-below-nav-wrapper {
+    .banner-below-nav-title {
+      font-size: 13px;
+    }
+  }
+  .blog-posts {
+    .post-list {
+      .post-image {
+        height: 160px;
+      }
+    }
+  }
+  footer {
+    padding: 25px 0 25px;
+  }
+}

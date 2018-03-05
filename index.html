@@ -7,6 +7,7 @@
     <title>Boohoo</title>
     <link rel="stylesheet" href="dist/font/stylesheet.css">
     <link rel="stylesheet" href="dist/libs/slick.css">
+    <link rel="stylesheet" href="dist/libs/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="dist/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -50,8 +51,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="">
+                        <div class="user-info">
                             <span class="user-account"></span>
+                            <div class="user-panel">
+                                <h3>Login / Register</h3>
+                                <div class="user-links">
+                                    <a href="javascript:void(0);" class="user-link-item">
+                                        Log In
+                                    </a>
+                                    <a href="javascript:void(0);" class="user-link-item">
+                                        Register
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="center">
@@ -69,12 +81,133 @@
                                 <span class="icon-wishlist"></span>
                             </a>
                         </div>
-                        <div class="mini-cart-total">
+                        <div class="mini-cart-total js-mini-cart-total">
                             <a href="#" class="mini-cart-link">
                                 <span class="js-minicart-quantity">
                                     5
                                 </span>
                             </a>
+                            <div class="mini-cart-content">
+                                <div class="mini-cart-header">
+                                    <i class="cart-img"></i>
+                                    Shopping Bag
+                                </div>
+                                <div class="mini-cart-products js-mini-cart-products">
+                                    <div class="mini-cart-product">
+                                        <a class="mini-cart-image-container">
+                                            <img src="dist/img/content/product1.jpg" alt="">
+                                        </a>
+                                        <div class="mini-cart-product-content">
+                                            <a href="#" class="mini-cart-name">
+                                                Desert Boots
+                                            </a>
+                                            <div class="mini-cart-attributes">
+                                                <span class="label">Colour:</span>
+                                                <span class="value">black</span>
+                                            </div>
+                                            <div class="mini-cart-attributes">
+                                                <span class="label">UK Size:</span>
+                                                <span class="value">5</span>
+                                            </div>
+                                            <div class="mini-cart-qty">
+                                                <div class="cart-attr">
+                                                    <span class="value">
+                                                        Quantity
+                                                    </span>
+                                                    <span class="quantity">
+                                                        2
+                                                    </span>
+                                                </div>
+                                                <div class="price">
+                                                    £32.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mini-cart-product">
+                                        <a class="mini-cart-image-container">
+                                            <img src="dist/img/content/product2.jpg" alt="">
+                                        </a>
+                                        <div class="mini-cart-product-content">
+                                            <a href="#" class="mini-cart-name">
+                                                Elaine High Neck Rouched Bodycon Dress
+                                            </a>
+                                            <div class="mini-cart-attributes">
+                                                <span class="label">Colour:</span>
+                                                <span class="value">black</span>
+                                            </div>
+                                            <div class="mini-cart-attributes">
+                                                <span class="label">UK Size:</span>
+                                                <span class="value">5</span>
+                                            </div>
+                                            <div class="mini-cart-qty">
+                                                <div class="cart-attr">
+                                                    <span class="value">
+                                                        Quantity
+                                                    </span>
+                                                    <span class="quantity">
+                                                        2
+                                                    </span>
+                                                </div>
+                                                <div class="price">
+                                                    £32.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mini-cart-product">
+                                        <a class="mini-cart-image-container">
+                                            <img src="dist/img/content/product3.jpg" alt="">
+                                        </a>
+                                        <div class="mini-cart-product-content">
+                                            <a href="#" class="mini-cart-name">
+                                                Elaine High Neck Rouched Bodycon Dress
+                                            </a>
+                                            <div class="mini-cart-attributes">
+                                                <span class="label">Colour:</span>
+                                                <span class="value">black</span>
+                                            </div>
+                                            <div class="mini-cart-attributes">
+                                                <span class="label">UK Size:</span>
+                                                <span class="value">5</span>
+                                            </div>
+                                            <div class="mini-cart-qty">
+                                                <div class="cart-attr">
+                                                    <span class="value">
+                                                        Quantity
+                                                    </span>
+                                                    <span class="quantity">
+                                                        2
+                                                    </span>
+                                                </div>
+                                                <div class="price">
+                                                    £32.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mini-cart-totals">
+                                    <div class="mini-cart-subtotals">
+                                        <span class="label">Subtotal:</span>
+                                        <span class="value">£95.80</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="mini-cart-banner">
+                                    <div class="row-style-1">
+                                        BOOHOO PREMIER - £5.99
+                                    </div>
+                                    <div class="row-style-2">
+                                        UNLIMITED NEXT DAY DELIVERY FOR A YEAR!*
+                                    </div>
+                                </a>
+                                <a href="#" class="mini-cart-link-checkout">
+                                    Checkout
+                                </a>
+                                <a href="#" class="mini-cart-link-cart">
+                                    View Bag
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,21 +217,216 @@
                             <a href="#">
                                 50% OFF
                             </a>
+                            <div class="level-2 col-5">
+                                <div class="global-nav">
+                                    <div class="menu-vertical nav-offers">
+                                        <h3>WOMENS OFFERS</h3>
+                                        <ul>
+                                            <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                            <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                            <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                            <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-vertical double-vertical">
+                                        <div class="half">
+                                            <h3>WOMENS SALE - 50% OFF</h3>
+                                            <ul>
+                                                <li><a href="#">£3 & Under</a></li>
+                                                <li><a href="#">£5 & Under</a></li>
+                                                <li><a href="#">£10 & Under</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">Tops</a></li>
+                                                <li><a href="#">Jumpsuits & Playsuits</a></li>
+                                                <li><a href="#">Skirts</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="half">
+                                            <h3>WOMENS OFFERS</h3>
+                                            <ul>
+                                                <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                                <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                                <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                                <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="menu-vertical">
+                                        <h3>WOMENS OFFERS</h3>
+                                        <ul>
+                                            <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                            <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                            <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                            <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-vertical">
+                                        <a href="#" class="banner">
+                                            <img src="dist/img/content/banner.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="has-submenu">
                             <a href="#">
                                 NEW IN
                             </a>
+                            <div class="level-2 col-4">
+                                <div class="global-nav">
+                                    <div class="menu-vertical double-vertical">
+                                        <div class="half">
+                                            <h3>WOMENS SALE - 50% OFF</h3>
+                                            <ul>
+                                                <li><a href="#">£3 & Under</a></li>
+                                                <li><a href="#">£5 & Under</a></li>
+                                                <li><a href="#">£10 & Under</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">Tops</a></li>
+                                                <li><a href="#">Jumpsuits & Playsuits</a></li>
+                                                <li><a href="#">Skirts</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="half">
+                                            <h3>WOMENS OFFERS</h3>
+                                            <ul>
+                                                <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                                <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                                <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                                <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="menu-vertical">
+                                        <h3>WOMENS OFFERS</h3>
+                                        <ul>
+                                            <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                            <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                            <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                            <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-vertical">
+                                        <a href="#" class="banner">
+                                            <img src="dist/img/content/banner.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="has-submenu">
                             <a href="#">
                                 WOMENS
                             </a>
+                            <div class="level-2 col-4">
+                                <div class="global-nav">
+                                    <div class="menu-vertical nav-offers">
+                                        <h3>WOMENS OFFERS</h3>
+                                        <ul>
+                                            <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                            <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                            <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                            <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-vertical double-vertical">
+                                        <div class="half">
+                                            <h3>WOMENS SALE - 50% OFF</h3>
+                                            <ul>
+                                                <li><a href="#">£3 & Under</a></li>
+                                                <li><a href="#">£5 & Under</a></li>
+                                                <li><a href="#">£10 & Under</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">Tops</a></li>
+                                                <li><a href="#">Jumpsuits & Playsuits</a></li>
+                                                <li><a href="#">Skirts</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="half">
+                                            <h3>WOMENS OFFERS</h3>
+                                            <ul>
+                                                <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                                <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                                <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                                <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="menu-vertical">
+                                        <h3>WOMENS OFFERS</h3>
+                                        <ul>
+                                            <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                            <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                            <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                            <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-vertical">
+                                        <a href="#" class="banner">
+                                            <img src="dist/img/content/banner.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="has-submenu">
                             <a href="#">
                                 MENS
                             </a>
+                            <div class="level-2 col-5">
+                                <div class="global-nav">
+                                    <div class="menu-vertical nav-offers">
+                                        <h3>WOMENS OFFERS</h3>
+                                        <ul>
+                                            <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                            <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                            <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                            <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-vertical double-vertical">
+                                        <div class="half">
+                                            <h3>WOMENS SALE - 50% OFF</h3>
+                                            <ul>
+                                                <li><a href="#">£3 & Under</a></li>
+                                                <li><a href="#">£5 & Under</a></li>
+                                                <li><a href="#">£10 & Under</a></li>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">Tops</a></li>
+                                                <li><a href="#">Jumpsuits & Playsuits</a></li>
+                                                <li><a href="#">Skirts</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="half">
+                                            <h3>WOMENS OFFERS</h3>
+                                            <ul>
+                                                <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                                <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                                <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                                <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="menu-vertical">
+                                        <h3>WOMENS OFFERS</h3>
+                                        <ul>
+                                            <li><a href="#">SALE! Over 15,000 Styles 50% Off Or More!</a></li>
+                                            <li><a href="#">Beauty - Buy 3, Get 20% Off</a></li>
+                                            <li><a href="#">Lingerie - Buy 3 For £10</a></li>
+                                            <li><a href="#">1000s Of Styles £10 & Under</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menu-vertical">
+                                        <a href="#" class="banner">
+                                            <img src="dist/img/content/banner.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="has-submenu">
                             <a href="#">
@@ -110,8 +438,8 @@
                                 SALE
                             </a>
                         </li>
-                        <li class="has-submenu">
-                            <a href="#">
+                        <li class=" ">
+                            <a href="#" class="inspire-me">
                                 INSPIRE ME
                             </a>
                         </li>
@@ -122,6 +450,7 @@
     <main>
         <div class="home-main">
             <div class="banners-below-nav-wrapper">
+                <a href="javascript:void(0);" class="icon-arrow js-icon-arrow"></a>
                 <div class="col-3">
                     <div style="color: #ea0170;" class="banner-below-nav-title">
                         Over 15,000 Styles, 50% Off Or More!
@@ -201,70 +530,133 @@
                         <div class="new-clothing tab-slider">
                             <div class="item">
                                 <img src="dist/img/content/slide.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide2.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide3.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide4.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide5.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide2.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                         </div>
                         <div class="tops tab-slider">
                             <div class="item">
                                 <img src="dist/img/content/slide4.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide2.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide3.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide5.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide2.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                         </div>
                         <div class="dress tab-slider">
                             <div class="item">
                                 <img src="dist/img/content/slide.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide4.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide2.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide3.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide5.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                             <div class="item">
                                 <img src="dist/img/content/slide2.jpeg" alt="">
+                                <a href="#" class="quick-buy">
+                                    quick-buy
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -500,6 +892,7 @@
         </div>
     </footer>
     <script src="https://use.fontawesome.com/35f65baac5.js"></script>
+    <script src="dist/libs/jquery.mCustomScrollbar.min.js"></script>
     <script src="dist/libs/slick.min.js"></script>
     <script src="dist/js/main.js"></script>
 </body>

@@ -6,7 +6,21 @@ $(document).ready(function(){
         slidesToShow: 5,
         slidesToScroll: 1,
         prevArrow: "<a class='arrow prev'><i class='icon-menu-arrow-left'></i></a>",
-        nextArrow: "<a class='arrow next'><i class='icon-menu-arrow-right'></i></a>"
+        nextArrow: "<a class='arrow next'><i class='icon-menu-arrow-right'></i></a>",
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     };
 
     $('.tab-slider').slick(tabSliderOptions);
@@ -62,5 +76,22 @@ $(document).ready(function(){
     })();
 
     /*--конец Форма поиска--*/
+
+    /*--малая корзинаа--*/
+    $('.js-mini-cart-total').hover(function(){
+        $('.mini-cart-content').fadeIn(100);
+    }, function(){
+        $('.mini-cart-content').fadeOut(100);
+    });
+
+    $('.js-mini-cart-products').mCustomScrollbar();
+
+    /*--конец малая корзина--*/
+
+    /*------------------------*/
+    $('.banners-below-nav-wrapper .icon-arrow').on('click', function(){
+        $(this).closest('.banners-below-nav-wrapper').toggleClass('open');
+    });
+    /*------------------------*/
 
 });
