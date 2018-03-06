@@ -161,7 +161,7 @@ $(document).ready(function(){
         $('.mini-cart-content').fadeOut(100);
     });
 
-    $('.js-mini-cart-products').mCustomScrollbar();
+    $('.js-mini-cart-products, .search-window').mCustomScrollbar();
 
     /*--конец малая корзина--*/
 
@@ -195,7 +195,7 @@ $(document).ready(function(){
 
     /*--Аккордеоны в футере--*/
     $('footer .accordion-item h5').on('click', function(){
-        var parent = $(this).closest('.accordion-item')
+        var parent = $(this).closest('.accordion-item');
         if(parent.hasClass('opened')){
             parent.removeClass('opened');
             parent.find('.vertical-menu').slideUp(200);
@@ -205,6 +205,23 @@ $(document).ready(function(){
         }
     });
     /*--конец Аккордеоны в футере--*/
+
+    /*--окно поиска--*/
+    $('.search-window').mCustomScrollbar();
+    $('.js-search-input').on('input', function(){
+        if($(this).val().length > 3){
+            $(".search-window").show();
+        } else {
+            $(".search-window").hide();
+        }
+    });
+    $(document).mouseup(function (e) {
+        var container = $(".search-window");
+        if (container.has(e.target).length === 0){
+            container.hide();
+        }
+    });
+    /*--конец Окно поиска--*/
 
 
 });
