@@ -104,6 +104,9 @@
     position: relative;
     img {
       margin: 0 auto;
+      display: block;
+      max-height: 100%;
+      max-width: 100%;
     }
     &:hover {
       .quick-buy {
