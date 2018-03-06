@@ -676,3 +676,28 @@ header {
     }
   }
 }
+
+.breadcrumb {
+  padding: 18px 30px 18px 30px !important;
+  margin: 0;
+  list-style: none;
+  font-size: 11px;
+  .breadcrumb-item {
+    display: inline-block;
+    text-transform: uppercase;
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    &:after {
+      content: '/';
+      margin-right: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(128, 128, 128);
+      margin-right: 10px;
+    }
+  }
+}

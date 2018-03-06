@@ -1,0 +1,43 @@
+.plp-banner-wrapper {
+  margin-bottom: 0;
+  background: #e6e5e2;
+  background: linear-gradient(to bottom, #e6e5e2 0%, #e8e7e4 100%);
+  position: relative;
+  overflow: hidden;
+  border: none;
+  .plp-subcategories {
+    background: #fff;
+    padding: 15px;
+    margin: 15px 15% 15px 5%;
+    width: 30%;
+    z-index: 10;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    margin-top: 0;
+  }
+  .columns {
+    column-count: 2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+      font-size: 13px;
+      &:before {
+        content: ">";
+        margin: 0 5px 0 0;
+        line-height: 20px;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+}
