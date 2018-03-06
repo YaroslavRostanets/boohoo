@@ -11,11 +11,12 @@
   width: 100%;
   & > a {
     width: 100%;
-    img {
-      display: block;
-      max-height: 100%;
-      max-width: 100%;
-    }
+    display: block;
+  }
+  img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
   }
 }
 .col-3 {
@@ -44,6 +45,10 @@
 }
 .full-banner {
   margin-bottom: 40px;
+  display: block;
+  .is-mobile {
+    display: none;
+  }
 }
 .two-banners {
   margin-bottom: 40px;

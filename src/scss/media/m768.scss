@@ -276,6 +276,14 @@
       }
     }
   }
+  .full-banner {
+    img {
+      display: none;
+    }
+    .is-mobile {
+      display: block;
+    }
+  }
   .full-banner, .three-banners, .two-banners {
     margin-bottom: 20px;
     a {
