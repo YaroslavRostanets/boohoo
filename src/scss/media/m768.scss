@@ -2,6 +2,38 @@
   header {
     padding: 10px 15px;
     height: 53px;
+    .mobile-user-info {
+      padding-left: 57px;
+      margin-top: 10px;
+      .mobile-user-title {
+        font-size: 11px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        &:before {
+          content: "";
+          font-family: icons!important;
+          speak: none;
+          font-style: normal;
+          font-weight: 400;
+          font-variant: normal;
+          text-transform: none;
+          margin-left: -35px;
+          font-size: 22px;
+          margin-right: 8px;
+        }
+      }
+      .user-links {
+        .user-link-item {
+          color: gray;
+          display: block;
+          font-size: 11px;
+          line-height: 16px;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          text-decoration: underline;
+        }
+      }
+    }
     .container, .top-line {
       height: 100%;
     }
@@ -48,6 +80,7 @@
     }
     .main-navigation {
       display: flex;
+      flex-direction: column;
       position: fixed;
       background: #FFFFFF;
       height: 100vh;
