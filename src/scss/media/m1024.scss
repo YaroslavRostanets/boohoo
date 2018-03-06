@@ -1,5 +1,6 @@
 @media (max-width: 1024px) {
   header {
+    padding: 10px 20px;
     .main-navigation {
       .menu-category {
         .has-submenu {
@@ -8,7 +9,20 @@
       }
       .level-2 {
         padding: 15px 10px 15px 10px;
+        h3 {
+          margin: 7px 0;
+          padding-bottom: 5px;
+        }
       }
+    }
+    .left-part, .right-part {
+      width: 130px;
+    }
+    .header-wishlist {
+      margin-right: 35px;
+    }
+    .search-form-wrap {
+      margin-right: 35px;
     }
   }
 

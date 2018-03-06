@@ -94,4 +94,13 @@ $(document).ready(function(){
     });
     /*------------------------*/
 
+    /*--Открыть\закрыть меню--*/
+    $('.mobile-menu-toggle').on('click', function(){
+        $('.js-mobile-menu').toggleClass('open');
+    });
+    $('.js-menu-toggle').on('click', function(){
+        $('.js-mobile-menu').removeClass('open');
+    });
+    /*--конец Открыть\закрыть меню--*/
+
 });
