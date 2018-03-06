@@ -12,4 +12,84 @@
       justify-content: flex-end;
     }
   }
+  .blog-posts {
+    .post-list {
+      .post-tile {
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    .accordion-item {
+      width: 100% !important;
+      padding: 0;
+      margin-bottom: 5px;
+      &.opened {
+        h5 {
+          &:after {
+            content: '';
+            font-family: icons!important;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            -webkit-font-smoothing: antialiased;
+          }
+        }
+      }
+    }
+    .vertical-menu {
+      display: none;
+    }
+    .payment {
+      display: none;
+    }
+    .social-wrap {
+      text-align: center;
+    }
+    h5 {
+      margin: 0 0 0 0;
+      height: 35px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding-right: 20px;
+      position: relative;
+      &:after {
+        content: "";
+        font-family: icons!important;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .newsletter-form-btn {
+      width: 120px;
+    }
+    .vertical-menu {
+      margin-top: 10px;
+      li {
+        padding-left: 15px;
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+    .subscribe-form {
+      h5 {
+        margin-bottom: 8px;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
 }

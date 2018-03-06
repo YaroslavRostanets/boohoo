@@ -193,6 +193,18 @@ $(document).ready(function(){
     });
     /*--конец Моб-меню--*/
 
+    /*--Аккордеоны в футере--*/
+    $('footer .accordion-item h5').on('click', function(){
+        var parent = $(this).closest('.accordion-item')
+        if(parent.hasClass('opened')){
+            parent.removeClass('opened');
+            parent.find('.vertical-menu').slideUp(200);
+        } else {
+            parent.addClass('opened');
+            parent.find('.vertical-menu').slideDown(200);
+        }
+    });
+    /*--конец Аккордеоны в футере--*/
 
 
 });

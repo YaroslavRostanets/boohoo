@@ -255,7 +255,21 @@
   }
   .blog-posts {
     .post-list {
-
+      flex-wrap: wrap;
+      .post-tile {
+        width: 50%;
+      }
     }
   }
+  footer {
+    .accordion-item {
+      width: 50% !important;
+      padding: 0 10px;
+      margin-bottom: 15px;
+    }
+    .footer-copy-wrapper {
+      flex-direction: column;
+    }
+  }
+
 }
