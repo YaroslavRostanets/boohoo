@@ -223,5 +223,24 @@ $(document).ready(function(){
     });
     /*--конец Окно поиска--*/
 
+    /*--styler--*/
+    $('[data-styler]').styler();
+    /*--конец styler--*/
+
+    /*--каталог Фильтры--*/
+    $('.js-filter-toggle').on('click', function(){
+        var parent = $(this).closest('.refinement');
+        parent.toggleClass('opened');
+        parent.find('.js-filter-contain').toggle();
+    });
+    $(document).mouseup(function (e) {
+        var container = $(".js-filter-contain");
+        if (container.has(e.target).length === 0){
+            container.hide();
+            container.closest('.refinement').removeClass('opened')
+        }
+    });
+    /*--конец каталог Фильтр--*/
+
 
 });
