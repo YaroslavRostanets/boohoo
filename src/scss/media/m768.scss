@@ -313,5 +313,15 @@
       flex-direction: column;
     }
   }
-
+  .account-login-wrapper {
+    .cols {
+      flex-wrap: wrap;
+      .col-2 {
+        width: 100%;
+      }
+    }
+    .login-box-content {
+      padding: 0 15px;
+    }
+  }
 }

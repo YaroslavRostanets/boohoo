@@ -53,4 +53,19 @@
       width: 100%;
     }
   }
+  .account-login-wrapper {
+    .form-row {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .remember-me {
+      width: 100%;
+      label {
+        justify-content: flex-end;
+      }
+    }
+    .password-reset-wrapper {
+      margin: 4px 0 8px;
+    }
+  }
 }
