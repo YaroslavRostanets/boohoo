@@ -37,6 +37,10 @@
       cursor: pointer;
     }
   }
+  .day-wrap, .year-wrap {
+    width: 115px;
+    max-width: 115px;
+  }
   .regular-input {
     border-radius: 0;
     border: 1px solid #aaa;
@@ -62,8 +66,73 @@
   }
   .select-wrap {
     flex-grow: 1;
+    select {
+      width: 100%;
+    }
   }
   .month-wrap {
     padding: 0 20px;
+  }
+  .form-accept {
+    display: block;
+  }
+  .message {
+    color: #e6007e;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 24%;
+    max-width: 200px;
+    padding: 0 7px 7px;
+    font-size: 13px;
+  }
+  .form-accept {
+    padding-top: 30px;
+    position: relative;
+    .form-row {
+      margin-bottom: 30px;
+      label {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-size: 12px;
+      }
+    }
+    button {
+      font-weight: 700;
+      background-color: #000;
+      border: 1px solid #000;
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      font-size: 12px;
+      line-height: normal;
+      letter-spacing: .6px;
+      text-align: center;
+      text-transform: uppercase;
+      height: 40px;
+      width: 280px;
+      margin-left: auto;
+      margin-right: 0;
+    }
+    &:before {
+      content: "";
+      height: 1px;
+      width: calc( 100% + 60px );
+      background: #EEEEEE;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+  }
+  .privacy-agreement {
+    font-size: 12px;
+    margin-bottom: 30px;
+    text-align: right;
+    a {
+      color: #aaa;
+      text-decoration: underline;
+    }
   }
 }
