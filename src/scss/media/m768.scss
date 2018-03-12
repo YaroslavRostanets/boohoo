@@ -361,4 +361,88 @@
       }
     }
   }
+
+  .basket-wrapper {
+    .cart-actions {
+      flex-wrap: wrap;
+      .cart-title {
+        width: 100%;
+      }
+      .checkout-link {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+    th {
+      display: none;
+    }
+    .is-in-stock {
+      display: none;
+    }
+    .price-sales-wrap {
+      display: none;
+    }
+    .basket-form {
+      .code {
+        display: none;
+      }
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+      }
+      .image-contain {
+        width: 50%;
+        a {
+          max-width: 160px;
+        }
+      }
+      .product-info {
+        width: 50%;
+      }
+      .variations .attribute {
+        .label {
+          text-transform: uppercase;
+          color: #aaa;
+        }
+        .value {
+          font-weight: 700;
+        }
+      }
+      .price-total-wrap {
+        position: static;
+        padding: 0;
+        .price-total {
+          position: absolute;
+          right: 20px;
+          top: 108px;
+        }
+      }
+      .item-details-action {
+        display: flex;
+        flex-direction: column;
+        a {
+          margin-bottom: 15px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .button-remove {
+        bottom: 60px;
+
+      }
+      .image-contain {
+        padding: 15px;
+
+      }
+    }
+    .is-mobile {
+      display: block;
+    }
+    .qty {
+      display: none;
+    }
+  }
 }

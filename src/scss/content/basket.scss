@@ -133,6 +133,35 @@
       font-weight: 700;
       padding: 20px 20px 20px 0;
       text-align: right;
+      position: relative;
+    }
+    .button-remove {
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      vertical-align: top;
+      padding-left: 2px;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      font-size: 12px;
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
+      .icon-remove {
+        &:before {
+          content: "";
+          font-family: icons!important;
+          speak: none;
+          font-style: normal;
+          font-weight: 400;
+          font-variant: normal;
+          text-transform: none;
+          -webkit-font-smoothing: antialiased;
+        }
+      }
     }
     tr {
       border-bottom: 1px solid #EEEEEE;
@@ -326,5 +355,8 @@
         }
       }
     }
+  }
+  .is-mobile {
+    display: none;
   }
 }

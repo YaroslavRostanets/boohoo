@@ -92,4 +92,39 @@
       }
     }
   }
+  .basket-wrapper {
+    .basket-form {
+      .price-total-wrap {
+        .price-total {
+          position: static;
+          margin-bottom: 10px;
+          display: block;
+          padding-left: 15px;
+        }
+      }
+      .button-remove {
+        bottom: 11px;
+      }
+    }
+    .cart-footer {
+      padding: 15px 15px 15px 15px;
+      .cart-delivery-information {
+        width: 100%;
+      }
+      .cart-actions-inner {
+        flex-direction: column;
+        .button-fancy-large {
+          width: 100%;
+        }
+      }
+      .continue-shopping {
+        margin-bottom: 15px;
+      }
+      .delivery-info {
+        td {
+          padding: 5px 0px;
+        }
+      }
+    }
+  }
 }
