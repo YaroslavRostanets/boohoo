@@ -58,11 +58,16 @@ $(document).ready(function(){
     })(jQuery);
 
     function runMobile(){
-
+        $('.js-filter-modal.left-side').hide();
+        $('h3.js-filter-toggle').on('click', filterCategoryMobileOpen);
+        $('.js-close-filter-contain').on('click', filterCategoryMobileClose);
     }
 
     function runTablet(){
         console.log(state.device);
+        $('h3.js-filter-toggle').unbind('click', filterCategoryMobileOpen);
+        $('.js-close-filter-contain').unbind('click', filterCategoryMobileClose);
+        $('.js-filter-modal.left-side').show();
         $('.js-filter-toggle').unbind('click', filterOpen);
         $(document).unbind('mouseup', filterClose);
         $('.refinements-wrapper .refinement>div').mCustomScrollbar();
@@ -70,6 +75,7 @@ $(document).ready(function(){
     }
 
     function runDesctop(){
+
         console.log(state.device);
         //$('.js-filter-toggle').closest('.refinement').removeClass('opened');
         $('.refinements-wrapper .refinement>div').mCustomScrollbar('destroy');
@@ -250,9 +256,22 @@ $(document).ready(function(){
         }
     }
 
+    function filterCategoryMobileClose (){
+        $(this).closest('.js-filter-contain').hide();
+    }
+
+    function filterCategoryMobileOpen (){
+        $('.js-filter-contain').hide();
+        $(this).siblings('.js-filter-contain').show();
+    }
+
     $('.js-close-modal').on('click', function(){
         $('.js-filter-modal.left-side').hide();
     });
+    $('.mobile-refine-by').on('click', function(){
+        $('.js-filter-modal.left-side').show();
+    });
+
     /*--конец каталог Фильтр--*/
 
 

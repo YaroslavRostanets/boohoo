@@ -5,9 +5,6 @@
   position: relative;
   overflow: hidden;
   border: none;
-  .back-button {
-    display: none;
-  }
   .plp-subcategories {
     background: #fff;
     padding: 15px;
@@ -107,6 +104,17 @@
       }
     }
   }
+  .mobile-control-buttons {
+    display: none;
+    justify-content: space-between;
+    a {
+      width: calc( 50% - 5px );
+    }
+    .black {
+      background-color: #000000;
+      color: #FFFFFF;
+    }
+  }
   .refinement {
     position: relative;
     &.opened {
@@ -144,6 +152,9 @@
           transform: translate(-50%,-50%);
         }
       }
+    }
+    .m-refinement-header {
+      display: none;
     }
     & > div {
       display: none;
@@ -192,6 +203,7 @@
   color: #000;
   position: relative;
   line-height: 1;
+
   .is-mobile {
     display: none;
   }
@@ -428,4 +440,7 @@
       font-size: 13px;
     }
   }
+}
+.js-close-modal {
+  display: none;
 }
