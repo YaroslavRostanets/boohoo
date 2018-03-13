@@ -446,8 +446,113 @@
     }
   }
   .catalog-main {
+    .back-button {
+      height: 40px;
+      order: 3;
+      background: #000000;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 12px;
+      font-weight: 700;
+    }
     .left-side {
+      //display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #FFFFFF;
+      z-index: 99;
+      width: auto;
+    }
+    .refinements-info-wrapper {
+      width: 100%;
+      margin-bottom: 20px;
+      .breadcrumb-refinement {
+        margin: 0 6px 5px 0;
+      }
+    }
+    .breadcrumb-refinement-wrap {
+      width: 100%;
+    }
+  }
+  .refinements-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    .refinement-head {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-bottom: 1px solid #000000;
+      background: none;
+      padding: 13px 10px 13px 0;
+      margin-top: 0;
+      display: flex;
+      justify-content: space-between;
+      .icon-menu-arrow {
+        display: block !important;
+        padding: 0;
+        transform: rotate(-90deg);
+        &:before {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .primary-content {
+    .search-product-count-wrapper {
       display: none;
+    }
+    .view-on-page {
+      display: none;
+    }
+  }
+  .primary-content {
+    .search-result-content {
+      .grid-tile {
+        width: 33.333%;
+      }
+      .product-tile {
+        padding-bottom: 20px;
+      }
+    }
+    .sort-result-options {
+      background: #FAFAFA;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      span {
+        display: none;
+      }
+    }
+    .mobile-refine-by {
+      background: #000000;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 12px;
+      width: 49%;
+      margin-right: 0;
+    }
+    .select-wrapper {
+      width: 49%;
+      .is-mobile {
+        margin-right: 0;
+        width: 100%;
+      }
+      select {
+        width: 100%;
+      }
     }
   }
 }

@@ -240,7 +240,7 @@ $(document).ready(function(){
         var parent = $(this).closest('.refinement');
         parent.toggleClass('opened');
         parent.find('.js-filter-contain').toggle();
-    };
+    }
 
     function filterClose(e){
         var container = $(".js-filter-contain");
@@ -250,6 +250,9 @@ $(document).ready(function(){
         }
     }
 
+    $('.js-close-modal').on('click', function(){
+        $('.js-filter-modal.left-side').hide();
+    });
     /*--конец каталог Фильтр--*/
 
 

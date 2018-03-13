@@ -20,7 +20,7 @@
 <header>
     <div class="container">
         <div class="top-line">
-            <div class="left-part">
+            <div class="left-part js-filter-modal">
                 <div class="mobile-menu-toggle"></div>
                 <div class="user-info">
                     <span class="user-account"></span>
@@ -556,7 +556,7 @@
             <img src="dist/img/content/dresses.jpg" alt="">
         </div>
         <div class="ref-wrap">
-            <div class="left-side">
+            <div class="left-side js-filter-modal">
                 <div class="refinements-wrapper container">
                     <div class="refinement">
                         <h3 class="refinement-head heading">
@@ -945,9 +945,15 @@
                         </a>
                     </div>
                 </div>
+                <a href="javascript:void(0);" class="back-button js-close-modal">
+                    Close
+                </a>
             </div>
             <div class="primary-content container">
                 <div class="sort-result-options">
+                    <a href="javascript:void(0);" class="is-mobile mobile-refine-by">
+                        Refine-by
+                    </a>
                     <div class="search-product-count-wrapper">
                         11 Products
                     </div>
@@ -959,7 +965,7 @@
                                 <option>Most Popular</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="view-on-page">
                             <span>View</span>
                             <select>
                                 <option>
@@ -971,6 +977,7 @@
                             </select>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="search-result-content">

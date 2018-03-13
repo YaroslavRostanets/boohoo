@@ -5,6 +5,9 @@
   position: relative;
   overflow: hidden;
   border: none;
+  .back-button {
+    display: none;
+  }
   .plp-subcategories {
     background: #fff;
     padding: 15px;
