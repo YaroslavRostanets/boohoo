@@ -94,9 +94,26 @@
     }
   }
   .primary-content {
+    .product-image {
+      .quickview {
+        display: none !important;
+      }
+    }
     .search-result-content {
       .grid-tile {
         width: 25%;
+        padding: 0 5px;
+      }
+    }
+    .product-name {
+      margin: 10px 0 0;
+    }
+    .product-pricing {
+      flex-direction: column;
+      .product-sales-price {
+        margin-top: 0;
+        margin-right: 0;
+        font-size: 14px;
       }
     }
     .sort-result-options {
@@ -139,12 +156,14 @@
     }
     .refinements-info-wrapper {
       order: 1;
+      margin-bottom: 5px;
       .breadcrumb-refinement {
         margin: 0 10px 10px 0;
       }
     }
     .refinements-wrapper {
       order: 2;
+      margin-top: 0;
     }
     .breadcrumb-refinement-clearall-link {
       display: none;
@@ -160,8 +179,43 @@
   .refinements-wrapper {
     .refinement {
       width: 100%;
-      &.heading {
+      &>div {
+        position: static;
+        width: 100%;
+      }
+    }
+    .refinement-head.heading {
+      display: none;
+    }
+    .refinement-head {
+      background: #FAFAFA;
+      border: none;
+      .icon-menu-arrow {
         display: none;
+      }
+    }
+    .mCSB_scrollTools .mCSB_draggerRail {
+      width: 5px;
+      background: #EEEEEE;
+    }
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+      background: #AAAAAA;
+    }
+  }
+  .sort-by-desctop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .refinements-wrapper {
+    .refinement {
+      &>div {
+        display: block;
+        border: none;
+        padding: 10px 10px;
+        max-height: 300px;
+        overflow-y: auto;
       }
     }
   }

@@ -62,14 +62,22 @@ $(document).ready(function(){
     }
 
     function runTablet(){
-
+        console.log(state.device);
+        $('.js-filter-toggle').unbind('click', filterOpen);
+        $(document).unbind('mouseup', filterClose);
+        $('.refinements-wrapper .refinement>div').mCustomScrollbar();
+        //$('.js-filter-toggle').closest('.refinement').addClass('opened');
     }
 
     function runDesctop(){
-
+        console.log(state.device);
+        //$('.js-filter-toggle').closest('.refinement').removeClass('opened');
+        $('.refinements-wrapper .refinement>div').mCustomScrollbar('destroy');
+        $('.js-filter-toggle').on('click', filterOpen);
+        $(document).on('mouseup', filterClose);
     }
 
-    $(window).getDevice(768,992);
+    $(window).getDevice(768,1024);
 
     /*--Слайдер в табах Главная --*/
     var tabSliderOptions = {
@@ -228,18 +236,20 @@ $(document).ready(function(){
     /*--конец styler--*/
 
     /*--каталог Фильтры--*/
-    $('.js-filter-toggle').on('click', function(){
+    function filterOpen(){
         var parent = $(this).closest('.refinement');
         parent.toggleClass('opened');
         parent.find('.js-filter-contain').toggle();
-    });
-    $(document).mouseup(function (e) {
+    };
+
+    function filterClose(e){
         var container = $(".js-filter-contain");
         if (container.has(e.target).length === 0){
             container.hide();
             container.closest('.refinement').removeClass('opened')
         }
-    });
+    }
+
     /*--конец каталог Фильтр--*/
 
 
