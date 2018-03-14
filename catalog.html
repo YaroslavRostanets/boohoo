@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="dist/libs/slick.css">
     <link rel="stylesheet" href="dist/libs/jquery.formstyler.css">
     <link rel="stylesheet" href="dist/libs/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="dist/libs/jquery.modal.min.css">
     <link rel="stylesheet" href="dist/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -1049,7 +1050,7 @@
             </div>
             <div class="primary-content container">
                 <div class="sort-result-options">
-                    <a href="javascript:void(0);" class="is-mobile mobile-refine-by">
+                    <a href="javascript:void(0);" class="mobile-refine-by">
                         Refine-by
                     </a>
                     <div class="search-product-count-wrapper">
@@ -1075,7 +1076,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="pagination container is-mobile">
+                    <div class="pagination container show-mobile">
                         <ul class="pagination-list">
                             <li class="pagination-item pagination-item-prev">
                                 <a href="#" class="icon-menu-arrow-left"></a>
@@ -1100,7 +1101,9 @@
                         <div class="product-tile">
                             <a href="#" class="product-image">
                                 <img src="dist/img/content/product.jpg" alt="">
-                                <div class="quickview">Купить</div>
+                                <object>
+                                    <a href="#modal-buy" rel="modal:open" class="quickview">Купить</a>
+                                </object>
                             </a>
                             <a href="#" class="product-name">
                                 Steph Contrast Stripe Asymmetric Shift Dress
@@ -1468,10 +1471,67 @@
         </div>
     </div>
 </footer>
-<script src="dist/libs/jquery.formstyler.min.js"></script>
-<script src="https://use.fontawesome.com/35f65baac5.js"></script>
-<script src="dist/libs/jquery.mCustomScrollbar.min.js"></script>
-<script src="dist/libs/slick.min.js"></script>
-<script src="dist/js/main.js"></script>
+
+<!--Модалка Купить-->
+<div id="modal-buy" class="modal modal-buy">
+    <div class="detail-main">
+        <div class="product-col-1">
+            <a href="javascript:void(0);" class="product-primary-image">
+                <img src="dist/img/content/modal-detail.jpeg" alt="">
+            </a>
+            <div class="product-thumbnails-container">
+                <a href="#" class="one-thumb">
+                    <img src="dist/img/content/modal-detail.jpeg" alt="">
+                </a>
+                <a href="#" class="one-thumb">
+                    <img src="dist/img/content/modal-detail2.jpeg" alt="">
+                </a>
+                <a href="#" class="one-thumb">
+                    <img src="dist/img/content/modal-detail3.jpeg" alt="">
+                </a>
+                <a href="#" class="one-thumb">
+                    <img src="dist/img/content/modal-detail4.jpeg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="product-col-2">
+            <div class="product-name">
+                Avril V Neck Triple Frill Rouched Shift Dress
+            </div>
+            <div class="product-number">
+                Product code:
+                <span>DZZ27408</span>
+            </div>
+            <div class="product-promo">
+                Free Saver delivery over £25!
+            </div>
+            <div class="product-price">
+                <div class="price-sales">
+                    £22.00
+                </div>
+                <a href="#" class="js-details-link">
+                    See full product details
+                </a>
+            </div>
+            <div class="product-variations">
+                <div class="product-variations">
+                    <div class="label">Colour:</div>
+                    <div class="value">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<a href="#" rel="modal:close">Close</a>-->
+</div>
+<!--конец модалка Купить -->
+
+    <script src="dist/libs/jquery.formstyler.min.js"></script>
+    <script src="https://use.fontawesome.com/35f65baac5.js"></script>
+    <script src="dist/libs/jquery.mCustomScrollbar.min.js"></script>
+    <script src="dist/libs/slick.min.js"></script>
+    <script src="dist/libs/jquery.modal.min.js"></script>
+    <script src="dist/js/main.js"></script>
 </body>
 </html>

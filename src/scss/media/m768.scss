@@ -532,6 +532,9 @@
     }
   }
   .primary-content {
+    .show-mobile {
+      display: block;
+    }
     .search-product-count-wrapper {
       display: none;
     }

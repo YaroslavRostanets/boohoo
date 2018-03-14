@@ -64,20 +64,19 @@ $(document).ready(function(){
     }
 
     function runTablet(){
-        console.log(state.device);
+        // console.log(state.device);
         $('h3.js-filter-toggle').unbind('click', filterCategoryMobileOpen);
         $('.js-close-filter-contain').unbind('click', filterCategoryMobileClose);
-        $('.js-filter-modal.left-side').show();
-        $('.js-filter-toggle').unbind('click', filterOpen);
-        $(document).unbind('mouseup', filterClose);
-        $('.refinements-wrapper .refinement>div').mCustomScrollbar();
+        // $('.js-filter-modal.left-side').show();
+        // $('.js-filter-toggle').unbind('click', filterOpen);
+        // $(document).unbind('mouseup', filterClose);
+        // $('.refinements-wrapper .refinement>div').mCustomScrollbar();
         //$('.js-filter-toggle').closest('.refinement').addClass('opened');
     }
 
     function runDesctop(){
-
-        console.log(state.device);
-        //$('.js-filter-toggle').closest('.refinement').removeClass('opened');
+        $('h3.js-filter-toggle').unbind('click', filterCategoryMobileOpen);
+        $('.js-close-filter-contain').unbind('click', filterCategoryMobileClose);
         $('.refinements-wrapper .refinement>div').mCustomScrollbar('destroy');
         $('.js-filter-toggle').on('click', filterOpen);
         $(document).on('mouseup', filterClose);
@@ -269,7 +268,7 @@ $(document).ready(function(){
         $('.js-filter-modal.left-side').hide();
     });
     $('.mobile-refine-by').on('click', function(){
-        $('.js-filter-modal.left-side').show();
+        $('.js-filter-modal.left-side').css({'display':'flex'});
     });
 
     /*--конец каталог Фильтр--*/

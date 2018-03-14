@@ -211,12 +211,17 @@
   .refinements-wrapper {
     .refinement {
       &>div {
-        display: block;
+        display: block !important;
         border: none;
         padding: 10px 10px;
         max-height: 300px;
         overflow-y: auto;
       }
     }
+  }
+}
+@media (min-width: 768px) {
+  .catalog-main .left-side {
+    display: block !important;
   }
 }

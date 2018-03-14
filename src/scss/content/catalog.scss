@@ -247,6 +247,12 @@
   width: 100%;
   max-width: 1920px;
   font-size: 13px;
+  .show-mobile {
+    display: none;
+  }
+  .mobile-refine-by {
+    display: none;
+  }
   .sort-result-options {
     margin-left: 2%;
     margin-right: 2%;
