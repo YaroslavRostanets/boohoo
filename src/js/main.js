@@ -147,7 +147,6 @@ $(document).ready(function(){
     (function(){
         var form = $('.js-search-form-wrap');
         var input = form.find('.js-search-input');
-        console.log(input);
         $('.js-search-icon').on('click', function(e){
             e.preventDefault();
             if(!$(this).closest('.search-form-wrap').hasClass('opened')
@@ -273,5 +272,66 @@ $(document).ready(function(){
 
     /*--конец каталог Фильтр--*/
 
+    /*--аккордеон карточка товара--*/
+    $('.js-global-accordion-header').on('click', function(){
+        var item = $(this).closest('.js-global-accordion-item');
+        var tabContent = item.find('.tab-content');
+        if(item.hasClass('opened')){
+            item.removeClass('opened');
+            tabContent.slideUp('.tab-content');
+        } else {
+            item.siblings().removeClass('opened');
+            item.addClass('opened');
+            tabContent.slideDown('.tab-content');
+            item.siblings().find('.tab-content').slideUp();
+        }
 
+    });
+    $('.js-global-accordion-header').eq(0).click();
+    /*--конец карточка товара--*/
+
+    /*--Вы смотрели/может заинтересовать слайдер --*/
+
+    var stdOptions = {
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: "<a class='arrow prev'><i class='icon-menu-arrow-left'></i></a>",
+        nextArrow: "<a class='arrow next'><i class='icon-menu-arrow-right'></i></a>",
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    }
+
+    $('.std-slider').slick(stdOptions);
+
+    $('.tab-label').on('click', function(e){
+        e.preventDefault();
+        var activeTab = $(this).attr('href');
+        $(activeTab).show();
+        $(this).addClass('active');
+        $(activeTab).siblings().hide();
+        $(this).siblings().removeClass('active');
+        $('.std-slider').slick('refresh');
+    });
+
+    $('.tab-label.active').click();
+    /*--конец смотрели/может заинтересовать слайдер--*/
 });

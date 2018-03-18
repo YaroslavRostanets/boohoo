@@ -400,30 +400,6 @@
     a {
       padding: 8px 11px;
     }
-    .icon-menu-arrow-left {
-      &:before {
-        content: "";
-        font-family: icons!important;
-        speak: none;
-        font-style: normal;
-        font-weight: 400;
-        font-variant: normal;
-        text-transform: none;
-        -webkit-font-smoothing: antialiased;
-      }
-    }
-    .icon-menu-arrow-right {
-      &:before {
-        content: "";
-        font-family: icons!important;
-        speak: none;
-        font-style: normal;
-        font-weight: 400;
-        font-variant: normal;
-        text-transform: none;
-        -webkit-font-smoothing: antialiased;
-      }
-    }
   }
   .category-description-slot {
     padding: 0 15px;
