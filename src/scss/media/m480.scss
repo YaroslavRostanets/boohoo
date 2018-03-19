@@ -127,5 +127,38 @@
       }
     }
   }
-
+  .product-main {
+    .product-variations {
+      .attribute {
+        .value {
+          flex-wrap: wrap;
+          .swatches {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .product-add-to-cart {
+      .button-fancy-large {
+        padding: 0;
+      }
+      .quantity {
+        width: 50px;
+        min-width: 50px;
+        input {
+          padding: 11px 10px;
+        }
+      }
+      .wishlist-button {
+        &:before {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+  .tabs-container {
+    .tab-label {
+      font-size: 12px;
+    }
+  }
 }

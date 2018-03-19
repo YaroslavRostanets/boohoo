@@ -602,5 +602,67 @@
       margin-top: 25px;
     }
   }
-
+  .product-main {
+    .product-col-1 {
+      width: 100%;
+    }
+    .product-col-2 {
+      width: 100%;
+    }
+    .product-name {
+      display: none;
+      &.mobile {
+        text-align: center;
+        font-size: 22px;
+        margin: 10px 0 15px 0;
+        font-weight: lighter;
+        display: block;
+      }
+    }
+    .product-image-container {
+      margin-bottom: 15px;
+    }
+    .breadcrumb {
+      display: none;
+    }
+    .product-thumbnails-container {
+      display: block;
+      margin-left: -5px;
+      margin-right: 5px;
+      .one-thumb {
+        display: inline-block;
+        margin: 0 5px;
+        width: 80px;
+      }
+    }
+    .product-variations {
+      .value {
+        ul {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  .zoomContainer {
+    display: none !important;
+  }
+  .tabs-container {
+    .tab-labels {
+      margin-bottom: -1px;
+    }
+    .tab-label {
+      border: 1px solid #000000;
+      margin: 0 0 0 -1px;
+      color: #000000;
+      font-weight: 400;
+      padding: 10px 15px;
+      font-size: 16px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    .tab-contents {
+      border-top: 1px solid #000;
+    }
+  }
 }

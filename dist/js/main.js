@@ -288,6 +288,11 @@ $(document).ready(function(){
 
     });
     $('.js-global-accordion-header').eq(0).click();
+
+    $(".product-primary-image").elevateZoom({
+        zoomWindowWidth: 500,
+        zoomWindowHeight: 500
+    });
     /*--конец карточка товара--*/
 
     /*--Вы смотрели/может заинтересовать слайдер --*/
@@ -306,19 +311,31 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 1024,
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 885,
                 settings: {
                     slidesToShow: 3
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 2
                 }
+            },
+            {
+                breakpoint: 380,
+                settings: {
+                    slidesToShow: 1
+                }
             }
         ]
-    }
+    };
 
     $('.std-slider').slick(stdOptions);
 

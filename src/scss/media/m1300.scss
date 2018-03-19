@@ -31,4 +31,44 @@
   footer {
     padding: 25px 0 25px;
   }
+  .product-main {
+    padding: 0 20px;
+    .banners-below-nav-wrapper {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    .product-image-container {
+      flex-direction: column-reverse;
+    }
+    .product-primary-image {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .product-name {
+      font-size: 20px;
+      height: auto;
+      margin-top: 0;
+    }
+    .product-thumbnails-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .one-thumb {
+        width: 88px;
+        margin: 0 10px;
+      }
+    }
+    .product-price {
+      margin: 10px 0 10px;
+    }
+    .product-variations {
+      .value {
+        .color {
+          li {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
 }
