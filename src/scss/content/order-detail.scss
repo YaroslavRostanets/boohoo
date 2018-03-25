@@ -29,7 +29,7 @@
   }
   .cols {
     display: flex;
-    margin: 20px -10px 0 -10px;
+    margin: 0 -10px 0 -10px;
     .col-2 {
       padding: 0 10px;
     }
@@ -118,6 +118,7 @@
     padding: 20px 0;
   }
   .pay-type {
+    padding: 15px;
     div {
       display: flex;
       align-items: center;
@@ -139,6 +140,7 @@
   .order-bottom {
     text-align: right;
     margin-top: 15px;
+    width: 100%;
     .black-btn {
       display: inline-block;
       margin-bottom: 20px;
@@ -147,5 +149,33 @@
   .return-shopping {
     color: #9c9c9c;
     text-decoration: underline;
+  }
+  .pay-table {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .total-table-wrap {
+    padding: 15px;
+  }
+  .left-col {
+    width: 50%;
+  }
+  .right-col {
+    width: 50%;
+  }
+  .th {
+    background: #FAFAFA;
+    text-align: left;
+    padding: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  .order-info-top {
+    padding: 15px;
   }
 }

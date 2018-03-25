@@ -487,21 +487,23 @@
 </header>
 <main>
     <div class="order-main">
-        <div class="order-number">
-            <span class="label">Order number: </span>
-            <div class="number">UK1026546589</div>
-        </div>
-        <div class="place-on">
-            <div class="label">
-                Place on:
+        <div class="order-info-top">
+            <div class="order-number">
+                <span class="label">Order number: </span>
+                <div class="number">UK1026546589</div>
             </div>
-            <div>Monday, 24 January, 2018</div>
-        </div>
-        <div class="order-status">
-            <div class="label">
-                Order status:
+            <div class="place-on">
+                <div class="label">
+                    Place on:
+                </div>
+                <div>Monday, 24 January, 2018</div>
             </div>
-            <span style="color: red;">CREATED</span>
+            <div class="order-status">
+                <div class="label">
+                    Order status:
+                </div>
+                <span style="color: red;">CREATED</span>
+            </div>
         </div>
         <div class="cols">
             <div class="col-2">
@@ -590,69 +592,64 @@
             </table>
         </div>
         <div class="pay-table">
-            <table colspan="2" cellspacing="0" cellpadding="0" width="100%">
-                <tr>
-                    <th>
-                        Payment details
-                    </th>
-                    <th>
-                        Order total
-                    </th>
-                </tr>
-                <tr>
-                    <td class="pay-type">
-                        <div>
-                            <i class="fa fa-credit-card" aria-hidden="true"></i>
-                            Карта ПриватБанк
-                        </div>
-                        <div style="display: none;">
-                            <i class="fa fa-money" aria-hidden="true"></i>
-                            При получении
-                        </div>
-                        <div style="display: none;">
-                            <i class="fa fa-university" aria-hidden="true"></i>
-                            Казначей
-                        </div>
-                    </td>
-                    <td>
-                        <table class="total-table" style="width: 100%;">
-                            <tr>
-                                <td><b>Subtotal: </b></td>
-                                <td><b>$112</b></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Delivery Australia
-                                </td>
-                                <td>
-                                    $2
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Discount
-                                </td>
-                                <td>
-                                    -1$
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <b>
-                                        Order Total:
-                                    </b>
-                                </td>
-                                <td>
-                                    <b>
-                                        $113
-                                    </b>
-                                </td>
-                            </tr>
-                        </table>
-
-                    </td>
-                </tr>
-            </table>
+            <div class="left-col">
+                <div class="th">Payment details</div>
+                <div class="pay-type">
+                    <div>
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        Карта ПриватБанк
+                    </div>
+                    <div style="display: none;">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        При получении
+                    </div>
+                    <div style="display: none;">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                        Казначей
+                    </div>
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="th">
+                    Order total
+                </div>
+                <div class="total-table-wrap">
+                    <table class="total-table" style="width: 100%;">
+                        <tr>
+                            <td><b>Subtotal: </b></td>
+                            <td><b>$112</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Delivery Australia
+                            </td>
+                            <td>
+                                $2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Discount
+                            </td>
+                            <td>
+                                -1$
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>
+                                    Order Total:
+                                </b>
+                            </td>
+                            <td>
+                                <b>
+                                    $113
+                                </b>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
             <div class="order-bottom">
                 <a href="#" class="std-btn black-btn">
                     Back to order history

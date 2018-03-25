@@ -161,4 +161,37 @@
       font-size: 12px;
     }
   }
+  .order-main {
+    padding: 10px 10px;
+    .left-col {
+      width: 100%;
+    }
+    .right-col {
+      width: 100%;
+    }
+    .image-contain {
+      width: 65px;
+    }
+    .prod-name {
+      font-size: 12px;
+      line-height: normal;
+      padding-bottom: 4px;
+    }
+    .code {
+      font-size: 10px;
+    }
+    .variations {
+      margin-top: 5px;
+      .attribute {
+        padding-bottom: 4px;
+        font-size: 10px;
+      }
+    }
+    .product-table {
+      td {
+        font-size: 12px;
+      }
+      
+    }
+  }
 }
