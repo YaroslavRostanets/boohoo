@@ -17,14 +17,6 @@
     </script>
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12&appId=239809253224021&autoLogAppEvents=1';
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <header>
     <div class="container">
         <div class="top-line">
@@ -494,612 +486,70 @@
     </div>
 </header>
 <main>
-    <div class="profile-main">
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="#" class="breadcrumb-element">MY ACCOUNT</a>
-            </li>
-            <li class="breadcrumb-item">
-                WISH LIST
-            </li>
-        </ul>
-        <div class="profile-content">
-            <div class="profile-nav">
-                <div class="account-nav-item">
-                    <div class="section-header">
-                        My account
+    <div class="order-main">
+        <div class="order-number">
+            <span class="label">Order number: </span>
+            <div class="number">UK1026546589</div>
+        </div>
+        <div class="place-on">
+            <div class="label">
+                Place on:
+            </div>
+            <div>Monday, 24 January, 2018</div>
+        </div>
+        <div class="order-status">
+            <div class="label">
+                Order status:
+            </div>
+            <span style="color: red;">CREATED</span>
+        </div>
+        <div class="cols">
+            <div class="col-2">
+                <div class="item-title">
+                    Delivery details
+                </div>
+                <div class="item-content">
+                    <div><b>Mr XXX XXX</b></div>
+                    <div class="adres">
+                        Moskovska str,. 46/5
                     </div>
-                    <ul class="account-nav-content">
-                        <li>
-                            <a href="#" data-tab-show=".account-tab-content">Личные данные</a>
-                        </li>
-                        <li class="active">
-                            <a href="#" data-tab-show=".order-history-tab">История заказов</a>
-                        </li>
-                        <li>
-                            <a href="#" data-tab-show=".wishlist-tab">Избранное</a>
-                        </li>
-                    </ul>
+                    <div>
+                        Melburn., TASS 11
+                    </div>
+                    <div>
+                        Australia
+                    </div>
+                    <div>
+                        <span class="label">
+                            Phone Number:
+                        </span>
+                        <span class="value">
+                            +380975555555
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div class="profile-tab-content">
-                <div class="account-tab-content">
-                    <h1>Account Details</h1>
-                    <div class="form-wrapper">
-                        <form action="#">
-                            <h3 class="section-header">
-                                Account Information
-                            </h3>
-                            <fieldset>
-                                <div class="form-group">
-                                    <label>
-                                        Title:*
-                                    </label>
-                                    <select>
-                                        <option>
-                                            Please Select
-                                        </option>
-                                        <option>
-                                            Mr.
-                                        </option>
-                                        <option>
-                                            Mrs.
-                                        </option>
-                                        <option>
-                                            Miss.
-                                        </option>
-                                        <option>
-                                            Ms
-                                        </option>
-                                        <option>
-                                            Dr
-                                        </option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label>
-                                        First Name:
-                                    </label>
-                                    <input type="text" class="regular-input">
-                                    <div class="help-block">
-                                        This field is required.
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>
-                                        Last Name:
-                                    </label>
-                                    <input type="text" class="regular-input">
-                                    <div class="help-block">
-                                        This field is required.
-                                    </div>
-                                </div>
-                                <div class="form-group birth-date">
-                                    <div class="select-wrap day-wrap">
-                                        <select>
-                                            <option>Day</option>
-                                            <option>01</option>
-                                            <option>02</option>
-                                            <option>03</option>
-                                            <option>04</option>
-                                            <option>05</option>
-                                            <option>06</option>
-                                        </select>
-                                    </div>
-                                    <div class="select-wrap month-wrap">
-                                        <select class="">
-                                            <option>
-                                                Month
-                                            </option>
-                                            <option>
-                                                01
-                                            </option>
-                                            <option>
-                                                02
-                                            </option>
-                                            <option>
-                                                03
-                                            </option>
-                                            <option>
-                                                04
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="select-wrap year-wrap">
-                                        <select>
-                                            <option>
-                                                Year
-                                            </option>
-                                            <option>
-                                                1980
-                                            </option>
-                                            <option>
-                                                1981
-                                            </option>
-                                            <option>
-                                                1982
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="message">
-                                        So we can send you a birthday treat
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>
-                                        Gender (optional):
-                                    </label>
-                                    <div class="select-wrap">
-                                        <select>
-                                            <option>
-                                                Please Select
-                                            </option>
-                                            <option>
-                                                Male
-                                            </option>
-                                            <option>
-                                                Female
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="message">
-                                        So we can send you a birthday treat
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button class="std-btn black-btn">
-                                        UPDATE
-                                    </button>
-                                </div>
-                            </fieldset>
-                        </form>
-                        <form action="">
-                            <h3 class="section-header">
-                                LOG IN INFORMATION
-                            </h3>
-                            <fieldset>
-                                <div class="form-group">
-                                    <label>
-                                        Password:
-                                    </label>
-                                    <input type="password" class="regular-input">
-                                    <div class="help-block">
-                                        This field is required.
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>
-                                        Confirm Password:
-                                    </label>
-                                    <input type="password" class="regular-input">
-                                    <div class="help-block">
-                                        This field is required.
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button class="std-btn black-btn">
-                                        UPDATE
-                                    </button>
-                                </div>
-                            </fieldset>
-                        </form>
-                        <form action="">
-                            <div class="form-accept">
-                                <fieldset>
-                                    <div class="form-row">
-                                        <label>
-                                            <input data-styler type="checkbox">
-                                            I'd like to receive exclusive discounts and news from boohoo by email and post
-                                        </label>
-                                    </div>
-                                    <div class="form-row">
-                                        <label>
-                                            <input data-styler type="checkbox">
-                                            I'd like to receive exclusive discounts and news from boohoo by SMS
-                                        </label>
-                                    </div>
-                                    <div class="form-row">
-                                        <label>
-                                            <input data-styler type="checkbox">
-                                            I'd like to receive occasional updates by email,
-                                            post and SMS from carefully selected third parties
-                                        </label>
-                                    </div>
-                                    <div class="privacy-agreement">
-                                        By creating your account you agree to our <a href="#">Terms & Conditions</a>.
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="std-btn black-btn">
-                                            UPDATE
-                                        </button>
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </form>
-
-                    </div>
+            <div class="col-2">
+                <div class="item-title">
+                    Delivery Options
                 </div>
-                <div class="wishlist-tab">
-                    <div class="section-header">
-                        <h2>
-                            Wish List
-                        </h2>
-                        <a href="javascript:void(0);" class="std-btn black-btn js-share-wishlist">
-                            Share Wishlist
+                <div class="item-content">
+                    <div>
+                        <span class="label"><b>Australia Super Saver Delivery:</b></span>
+                        <span class="value">
+                            $2.99
+                        </span>
+                    </div>
+                    <div class="more-info-wrap">
+                        <a href="#">
+                            More information
                         </a>
-                        <div class="social-sharing-panel">
-                            <div class="fb-like"
-                                 data-href="https://developers.facebook.com/docs/plugins/"
-                                 data-layout="standard" data-action="like" data-size="small"
-                                 data-show-faces="true" data-share="true">
-                            </div>
-                            <div class="share-link-content">
-                                or Share Link:
-                                <a class="js-wishlist-share" href="https://www.boohoo.com/list?WishListID=8dd5c46d4f0db4d400edd826f6" target="_blank">
-                                    https://www.boohoo.com/list?WishListID=8dd5c46d4f0db4d400edd826f6
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <table colspan="2" cellspacing="0" cellpadding="0" width="100%">
-                        <tr>
-                            <th colspan="2">ITEM</th>
-                            <th>DATE ADDED</th>
-                            <th style="text-align: center;">QTY DESIRED</th>
-                            <th class="price-total-head">ITEM PRICE</th>
-                        </tr>
-                        <tr>
-                            <td class="image-contain">
-                                <a href="#">
-                                    <img src="dist/img/content/product2.jpg" alt="">
-                                </a>
-                            </td>
-                            <td class="product-info">
-                                <a class="prod-name" href="#">
-                                    Libby Peeptoe Open Lace Shoe Boots
-                                </a>
-                                <div class="code">Product code: DZZ33526-105-12</div>
-                                <div class="variations">
-                                    <div class="attribute">
-                                        <span class="label">Colour:</span>
-                                        <span class="value">Black</span>
-                                    </div>
-                                    <div class="attribute">
-                                        <span class="label">UK Size:</span>
-                                        <span class="value">4</span>
-                                    </div>
-                                </div>
-                                <div class="item-details-action">
-                                    <a href="#" >
-                                        <i class="icon-edit"></i>
-                                        <span>
-                                    Edit Details
-                                </span>
-                                    </a>
-                                    <a href="#">
-                                        <i class="icon-remove"></i>
-                                        <span>
-                                    Remove
-                                </span>
-                                    </a>
-                                </div>
-                            </td>
-                            <td class="date-added">
-                                4 Mar 2018
-                            </td>
-
-                            <td class="qty-desired">
-                                <input type="text" class="js-quantity" value="1">
-                                <div class="is-in-stock">
-                                    In Stock
-                                </div>
-                            </td>
-
-                            <td class="price-total-wrap">
-                                <span class="price-total">
-                                    £28.00
-                                </span>
-                                <div class="bottom-control">
-                                    <label>Qty:</label>
-                                    <input type="text" class="js-quantity" value="1">
-                                    <button class="std-btn black-btn">
-                                        Добавить в корзину
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="image-contain">
-                                <a href="#">
-                                    <img src="dist/img/content/product3.jpg" alt="">
-                                </a>
-                            </td>
-                            <td class="product-info">
-                                <a class="prod-name" href="#">
-                                    Libby Peeptoe Open Lace Shoe Boots
-                                </a>
-                                <div class="code">Product code: DZZ33526-105-12</div>
-                                <div class="variations">
-                                    <div class="attribute">
-                                        <span class="label">Colour:</span>
-                                        <span class="value">Black</span>
-                                    </div>
-                                    <div class="attribute">
-                                        <span class="label">UK Size:</span>
-                                        <span class="value">4</span>
-                                    </div>
-                                    <div class="attribute is-mobile">
-                                        <span class="label">QUANTITY:</span>
-                                        <span class="value">1</span>
-                                    </div>
-                                </div>
-                                <div class="item-details-action">
-                                    <a href="#" >
-                                        <i class="icon-edit"></i>
-                                        <span>
-                                    Edit Details
-                                </span>
-                                    </a>
-                                    <a href="#">
-                                        <i class="icon-wish"></i>
-                                        <span>
-                                    Add to Wish List
-                                </span>
-                                    </a>
-                                </div>
-                            </td>
-                            <td class="qty">
-                                <div class="flex">
-                                    <input type="text" class="js-quantity" value="1">
-                                    <div class="is-in-stock">
-                                        In stock
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="price-sales-wrap">
-                                <div class="price-sales">
-                                    £28.00
-                                </div>
-                            </td>
-                            <td class="price-total-wrap">
-                        <span class="price-total">
-                            £28.00
-                        </span>
-                                <a href="javascript:void(0);" class="button-remove">
-                                    <i class="icon-remove"></i>
-                                    <span>Remove</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="image-contain">
-                                <a href="#">
-                                    <img src="dist/img/content/product1.jpg" alt="">
-                                </a>
-                            </td>
-                            <td class="product-info">
-                                <a class="prod-name" href="#">
-                                    Libby Peeptoe Open Lace Shoe Boots
-                                </a>
-                                <div class="code">Product code: DZZ33526-105-12</div>
-                                <div class="variations">
-                                    <div class="attribute">
-                                        <span class="label">Colour:</span>
-                                        <span class="value">Black</span>
-                                    </div>
-                                    <div class="attribute">
-                                        <span class="label">UK Size:</span>
-                                        <span class="value">4</span>
-                                    </div>
-                                    <div class="attribute is-mobile">
-                                        <span class="label">QUANTITY:</span>
-                                        <span class="value">1</span>
-                                    </div>
-                                </div>
-                                <div class="item-details-action">
-                                    <a href="#" >
-                                        <i class="icon-edit"></i>
-                                        <span>
-                                    Edit Details
-                                </span>
-                                    </a>
-                                    <a href="#">
-                                        <i class="icon-wish"></i>
-                                        <span>
-                                    Add to Wish List
-                                </span>
-                                    </a>
-                                </div>
-                            </td>
-                            <td class="qty">
-                                <div class="flex">
-                                    <input type="text" class="js-quantity" value="1">
-                                    <div class="is-in-stock">
-                                        In stock
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="price-sales-wrap">
-                                <div class="price-sales">
-                                    £28.00
-                                </div>
-                            </td>
-                            <td class="price-total-wrap">
-                        <span class="price-total">
-                            £28.00
-                        </span>
-                                <a href="javascript:void(0);" class="button-remove">
-                                    <i class="icon-remove"></i>
-                                    <span>Remove</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="image-contain">
-                                <a href="#">
-                                    <img src="dist/img/content/catalog2.jpg" alt="">
-                                </a>
-                            </td>
-                            <td class="product-info">
-                                <a class="prod-name" href="#">
-                                    Libby Peeptoe Open Lace Shoe Boots
-                                </a>
-                                <div class="code">Product code: DZZ33526-105-12</div>
-                                <div class="variations">
-                                    <div class="attribute">
-                                        <span class="label">Colour:</span>
-                                        <span class="value">Black</span>
-                                    </div>
-                                    <div class="attribute">
-                                        <span class="label">UK Size:</span>
-                                        <span class="value">4</span>
-                                    </div>
-                                    <div class="attribute is-mobile">
-                                        <span class="label">QUANTITY:</span>
-                                        <span class="value">1</span>
-                                    </div>
-                                </div>
-                                <div class="item-details-action">
-                                    <a href="#" >
-                                        <i class="icon-edit"></i>
-                                        <span>
-                                    Edit Details
-                                </span>
-                                    </a>
-                                    <a href="#">
-                                        <i class="icon-wish"></i>
-                                        <span>
-                                    Add to Wish List
-                                </span>
-                                    </a>
-                                </div>
-                            </td>
-                            <td class="qty">
-                                <div class="flex">
-                                    <input type="text" class="js-quantity" value="1">
-                                    <div class="is-in-stock">
-                                        In stock
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="price-sales-wrap">
-                                <div class="price-sales">
-                                    £28.00
-                                </div>
-                            </td>
-                            <td class="price-total-wrap">
-                        <span class="price-total">
-                            £28.00
-                        </span>
-                                <a href="javascript:void(0);" class="button-remove">
-                                    <i class="icon-remove"></i>
-                                    <span>Remove</span>
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="order-history-tab">
-                    <div class="section-header">
-                        Order history
-                    </div>
-                    <div class="order-history-wrap">
-                        <div class="one-order">
-                            <div class="order-top">
-                                <table>
-                                    <tr>
-                                        <td>Date ordered: </td>
-                                        <td>Monday, 24 January, 2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Order status: </td>
-                                        <td><span style="color: red;">CREATED</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Order Number: </td>
-                                        <td>UK1012445566</td>
-                                    </tr>
-                                </table>
-                                <a href="#" class="std-btn black-btn">
-                                    View Order
-                                </a>
-                            </div>
-                            <div class="order-bottom">
-                                <div class="left-part">
-                                    <div><b>Delivered to:</b></div>
-                                    <div>XXX XXX</div>
-                                </div>
-                                <div class="right-part">
-                                    <div><b>Order Total:</b></div>
-                                    <div>$3.99</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="one-order">
-                            <div class="order-top">
-                                <table>
-                                    <tr>
-                                        <td>Date ordered: </td>
-                                        <td>Monday, 24 January, 2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Order status: </td>
-                                        <td><span style="color: red;">CREATED</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Order Number: </td>
-                                        <td>UK1012445566</td>
-                                    </tr>
-                                </table>
-                                <a href="#" class="std-btn black-btn">
-                                    View Order
-                                </a>
-                            </div>
-                            <div class="order-bottom">
-                                <div class="left-part">
-                                    <div><b>Delivered to:</b></div>
-                                    <div>XXX XXX</div>
-                                </div>
-                                <div class="right-part">
-                                    <div><b>Order Total:</b></div>
-                                    <div>$3.99</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="one-order">
-                            <div class="order-top">
-                                <table>
-                                    <tr>
-                                        <td>Date ordered: </td>
-                                        <td>Monday, 24 January, 2018</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Order status: </td>
-                                        <td><span style="color: red;">CREATED</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Order Number: </td>
-                                        <td>UK1012445566</td>
-                                    </tr>
-                                </table>
-                                <a href="#" class="std-btn black-btn">
-                                    View Order
-                                </a>
-                            </div>
-                            <div class="order-bottom">
-                                <div class="left-part">
-                                    <div><b>Delivered to:</b></div>
-                                    <div>XXX XXX</div>
-                                </div>
-                                <div class="right-part">
-                                    <div><b>Order Total:</b></div>
-                                    <div>$3.99</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="product-table">
+            
         </div>
     </div>
 </main>
@@ -1259,12 +709,12 @@
         </div>
     </div>
 </footer>
-    <script src="dist/libs/jquery.formstyler.min.js"></script>
-    <script src="https://use.fontawesome.com/35f65baac5.js"></script>
-    <script src="dist/libs/jquery.mCustomScrollbar.min.js"></script>
-    <script src="dist/libs/slick.min.js"></script>
-    <script src="dist/libs/jquery.modal.min.js"></script>
-    <script src="dist/libs/jquery.elevateZoom-3.0.8.min.js"></script>
-    <script src="dist/js/main.js"></script>
+<script src="dist/libs/jquery.formstyler.min.js"></script>
+<script src="https://use.fontawesome.com/35f65baac5.js"></script>
+<script src="dist/libs/jquery.mCustomScrollbar.min.js"></script>
+<script src="dist/libs/slick.min.js"></script>
+<script src="dist/libs/jquery.modal.min.js"></script>
+<script src="dist/libs/jquery.elevateZoom-3.0.8.min.js"></script>
+<script src="dist/js/main.js"></script>
 </body>
 </html>

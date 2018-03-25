@@ -363,5 +363,10 @@ $(document).ready(function(){
     });
 
     $('.account-nav-content .active a').click();
+
+    $('.js-share-wishlist').on('click', function(){
+       $(this).addClass('active');
+       $('.social-sharing-panel').show();
+    });
     /*--конец Личный кабинет--*/
 });
