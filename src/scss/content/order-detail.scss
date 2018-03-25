@@ -56,4 +56,96 @@
       color: #9c9c9c;
     }
   }
+  table {
+    border: none;
+    border-collapse: collapse;
+  }
+  th {
+    background: #FAFAFA;
+    font-weight: 700;
+    border: 0;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: left;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+  }
+  td {
+    vertical-align: top;
+    padding: 10px;
+  }
+  .image-contain {
+    padding: 10px;
+    width: 120px;
+    a {
+      display: block;
+      img {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  .product-info {
+    padding: 10px 0;
+    position: relative;
+  }
+  .prod-name {
+    padding-bottom: 7px;
+    font-size: 14px;
+    line-height: 18px;
+    font-style: normal;
+    display: block;
+  }
+  .code {
+    color: gray;
+    font-size: 12px;
+  }
+  .variations {
+    margin-top: 18px;
+    .attribute {
+      padding-bottom: 10px;
+      font-size: 12px;
+      word-break: normal;
+      .label {
+        font-weight: 700;
+      }
+    }
+  }
+  .qty {
+    padding: 20px 0;
+  }
+  .pay-type {
+    div {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+    }
+    .fa {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+  }
+  .total-table {
+    td {
+      padding: 2px;
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+  .order-bottom {
+    text-align: right;
+    margin-top: 15px;
+    .black-btn {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+  .return-shopping {
+    color: #9c9c9c;
+    text-decoration: underline;
+  }
 }

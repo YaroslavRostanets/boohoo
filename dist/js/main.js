@@ -61,16 +61,17 @@ $(document).ready(function(){
         $('.js-filter-modal.left-side').hide();
         $('h3.js-filter-toggle').on('click', filterCategoryMobileOpen);
         $('.js-close-filter-contain').on('click', filterCategoryMobileClose);
+        $('.refinements-wrapper .refinement>div').mCustomScrollbar('destroy');
     }
 
     function runTablet(){
         // console.log(state.device);
         $('h3.js-filter-toggle').unbind('click', filterCategoryMobileOpen);
         $('.js-close-filter-contain').unbind('click', filterCategoryMobileClose);
+        $('.refinements-wrapper .refinement>div').mCustomScrollbar();
         // $('.js-filter-modal.left-side').show();
         // $('.js-filter-toggle').unbind('click', filterOpen);
         // $(document).unbind('mouseup', filterClose);
-        // $('.refinements-wrapper .refinement>div').mCustomScrollbar();
         //$('.js-filter-toggle').closest('.refinement').addClass('opened');
     }
 

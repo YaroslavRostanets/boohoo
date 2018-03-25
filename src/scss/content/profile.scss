@@ -61,17 +61,6 @@
       border: none;
     }
   }
-  .black-btn {
-    background: #000000;
-    color: #FFFFFF;
-    width: 280px;
-    border: 1px solid #000000;
-    margin-left: auto;
-    margin-right: 0;
-    &:hover, &:active {
-      background: #333333;
-    }
-  }
 }
 .wishlist-tab {
   .section-header {
@@ -100,10 +89,6 @@
     .social-sharing-panel {
       width: 100%;
     }
-  }
-  table {
-    border: none;
-    border-collapse: collapse;
   }
   table {
     border: none;
