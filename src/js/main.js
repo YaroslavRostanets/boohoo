@@ -351,4 +351,17 @@ $(document).ready(function(){
 
     $('.tab-label.active').click();
     /*--конец смотрели/может заинтересовать слайдер--*/
+
+    /*--Личный кабинет табы--*/
+    $('.account-nav-content a').on('click', function(e){
+        e.preventDefault();
+        activeTab = $(this).attr('data-tab-show');
+        $(activeTab).siblings().hide();
+        $(activeTab).show();
+        $(this).parent().siblings().removeClass('active');
+        $(this).parent().addClass('active');
+    });
+
+    $('.account-nav-content .active a').click();
+    /*--конец Личный кабинет--*/
 });
