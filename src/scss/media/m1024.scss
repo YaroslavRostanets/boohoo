@@ -205,6 +205,21 @@
   .sort-by-desctop {
     display: none;
   }
+  .profile-main {
+    .profile-nav {
+      width: 25%;
+    }
+    .profile-tab-content {
+      width: 75%;
+    }
+  }
+  .order-history-tab {
+    .one-order {
+      .black-btn {
+        width: 165px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
