@@ -510,13 +510,13 @@
                         My account
                     </div>
                     <ul class="account-nav-content">
-                        <li>
+                        <li class="active">
                             <a href="#" data-tab-show=".account-tab-content">Личные данные</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#" data-tab-show=".order-history-tab">История заказов</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="#" data-tab-show=".wishlist-tab">Избранное</a>
                         </li>
                     </ul>
@@ -629,7 +629,7 @@
                                     <label>
                                         Gender (optional):
                                     </label>
-                                    <div class="select-wrap">
+                                    <div class="select-wrap gender-wrap">
                                         <select>
                                             <option>
                                                 Please Select
@@ -785,6 +785,76 @@
                                 </div>
                             </td>
                             <td class="date-added">
+                                <div class="label-mobile">
+                                    <b>
+                                        Date Added:
+                                    </b>
+                                </div>
+                                4 Mar 2018
+                            </td>
+
+                            <td class="qty-desired">
+                                <div class="label-mobile">
+                                    <b>
+                                        Qty Desired:
+                                    </b>
+                                </div>
+                                <input type="text" class="js-quantity" value="1">
+                                <div class="is-in-stock">
+                                    In Stock
+                                </div>
+                            </td>
+
+                            <td class="price-total-wrap">
+                                <span class="price-total">
+                                    £28.00
+                                </span>
+                                <div class="bottom-control">
+                                    <label>Qty:</label>
+                                    <input type="text" class="js-quantity" value="1">
+                                    <button class="std-btn black-btn">
+                                        Добавить в корзину
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="image-contain">
+                                <a href="#">
+                                    <img src="dist/img/content/product2.jpg" alt="">
+                                </a>
+                            </td>
+                            <td class="product-info">
+                                <a class="prod-name" href="#">
+                                    Libby Peeptoe Open Lace Shoe Boots
+                                </a>
+                                <div class="code">Product code: DZZ33526-105-12</div>
+                                <div class="variations">
+                                    <div class="attribute">
+                                        <span class="label">Colour:</span>
+                                        <span class="value">Black</span>
+                                    </div>
+                                    <div class="attribute">
+                                        <span class="label">UK Size:</span>
+                                        <span class="value">4</span>
+                                    </div>
+                                </div>
+                                <div class="item-details-action">
+                                    <a href="#" >
+                                        <i class="icon-edit"></i>
+                                        <span>
+                                    Edit Details
+                                </span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icon-remove"></i>
+                                        <span>
+                                    Remove
+                                </span>
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="date-added">
                                 4 Mar 2018
                             </td>
 
@@ -811,7 +881,7 @@
                         <tr>
                             <td class="image-contain">
                                 <a href="#">
-                                    <img src="dist/img/content/product3.jpg" alt="">
+                                    <img src="dist/img/content/product2.jpg" alt="">
                                 </a>
                             </td>
                             <td class="product-info">
@@ -828,10 +898,6 @@
                                         <span class="label">UK Size:</span>
                                         <span class="value">4</span>
                                     </div>
-                                    <div class="attribute is-mobile">
-                                        <span class="label">QUANTITY:</span>
-                                        <span class="value">1</span>
-                                    </div>
                                 </div>
                                 <div class="item-details-action">
                                     <a href="#" >
@@ -841,40 +907,41 @@
                                 </span>
                                     </a>
                                     <a href="#">
-                                        <i class="icon-wish"></i>
+                                        <i class="icon-remove"></i>
                                         <span>
-                                    Add to Wish List
+                                    Remove
                                 </span>
                                     </a>
                                 </div>
                             </td>
-                            <td class="qty">
-                                <div class="flex">
-                                    <input type="text" class="js-quantity" value="1">
-                                    <div class="is-in-stock">
-                                        In stock
-                                    </div>
+                            <td class="date-added">
+                                4 Mar 2018
+                            </td>
+
+                            <td class="qty-desired">
+                                <input type="text" class="js-quantity" value="1">
+                                <div class="is-in-stock">
+                                    In Stock
                                 </div>
                             </td>
-                            <td class="price-sales-wrap">
-                                <div class="price-sales">
-                                    £28.00
-                                </div>
-                            </td>
+
                             <td class="price-total-wrap">
-                        <span class="price-total">
-                            £28.00
-                        </span>
-                                <a href="javascript:void(0);" class="button-remove">
-                                    <i class="icon-remove"></i>
-                                    <span>Remove</span>
-                                </a>
+                                <span class="price-total">
+                                    £28.00
+                                </span>
+                                <div class="bottom-control">
+                                    <label>Qty:</label>
+                                    <input type="text" class="js-quantity" value="1">
+                                    <button class="std-btn black-btn">
+                                        Добавить в корзину
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="image-contain">
                                 <a href="#">
-                                    <img src="dist/img/content/product1.jpg" alt="">
+                                    <img src="dist/img/content/product2.jpg" alt="">
                                 </a>
                             </td>
                             <td class="product-info">
@@ -891,10 +958,6 @@
                                         <span class="label">UK Size:</span>
                                         <span class="value">4</span>
                                     </div>
-                                    <div class="attribute is-mobile">
-                                        <span class="label">QUANTITY:</span>
-                                        <span class="value">1</span>
-                                    </div>
                                 </div>
                                 <div class="item-details-action">
                                     <a href="#" >
@@ -904,97 +967,35 @@
                                 </span>
                                     </a>
                                     <a href="#">
-                                        <i class="icon-wish"></i>
+                                        <i class="icon-remove"></i>
                                         <span>
-                                    Add to Wish List
+                                    Remove
                                 </span>
                                     </a>
                                 </div>
                             </td>
-                            <td class="qty">
-                                <div class="flex">
-                                    <input type="text" class="js-quantity" value="1">
-                                    <div class="is-in-stock">
-                                        In stock
-                                    </div>
+                            <td class="date-added">
+                                4 Mar 2018
+                            </td>
+
+                            <td class="qty-desired">
+                                <input type="text" class="js-quantity" value="1">
+                                <div class="is-in-stock">
+                                    In Stock
                                 </div>
                             </td>
-                            <td class="price-sales-wrap">
-                                <div class="price-sales">
-                                    £28.00
-                                </div>
-                            </td>
+
                             <td class="price-total-wrap">
-                        <span class="price-total">
-                            £28.00
-                        </span>
-                                <a href="javascript:void(0);" class="button-remove">
-                                    <i class="icon-remove"></i>
-                                    <span>Remove</span>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="image-contain">
-                                <a href="#">
-                                    <img src="dist/img/content/catalog2.jpg" alt="">
-                                </a>
-                            </td>
-                            <td class="product-info">
-                                <a class="prod-name" href="#">
-                                    Libby Peeptoe Open Lace Shoe Boots
-                                </a>
-                                <div class="code">Product code: DZZ33526-105-12</div>
-                                <div class="variations">
-                                    <div class="attribute">
-                                        <span class="label">Colour:</span>
-                                        <span class="value">Black</span>
-                                    </div>
-                                    <div class="attribute">
-                                        <span class="label">UK Size:</span>
-                                        <span class="value">4</span>
-                                    </div>
-                                    <div class="attribute is-mobile">
-                                        <span class="label">QUANTITY:</span>
-                                        <span class="value">1</span>
-                                    </div>
-                                </div>
-                                <div class="item-details-action">
-                                    <a href="#" >
-                                        <i class="icon-edit"></i>
-                                        <span>
-                                    Edit Details
-                                </span>
-                                    </a>
-                                    <a href="#">
-                                        <i class="icon-wish"></i>
-                                        <span>
-                                    Add to Wish List
-                                </span>
-                                    </a>
-                                </div>
-                            </td>
-                            <td class="qty">
-                                <div class="flex">
-                                    <input type="text" class="js-quantity" value="1">
-                                    <div class="is-in-stock">
-                                        In stock
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="price-sales-wrap">
-                                <div class="price-sales">
+                                <span class="price-total">
                                     £28.00
+                                </span>
+                                <div class="bottom-control">
+                                    <label>Qty:</label>
+                                    <input type="text" class="js-quantity" value="1">
+                                    <button class="std-btn black-btn">
+                                        Добавить в корзину
+                                    </button>
                                 </div>
-                            </td>
-                            <td class="price-total-wrap">
-                        <span class="price-total">
-                            £28.00
-                        </span>
-                                <a href="javascript:void(0);" class="button-remove">
-                                    <i class="icon-remove"></i>
-                                    <span>Remove</span>
-                                </a>
                             </td>
                         </tr>
                     </table>

@@ -21,6 +21,14 @@
     width: calc( 100% - 300px );
     padding-left: 20px;
   }
+  .form-wrapper {
+    .form-accept {
+      &:before {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
   .account-nav-item {
     .section-header {
       background: #FAFAFA;
@@ -304,6 +312,11 @@
       color: rgb(128, 128, 128);
       text-decoration: underline;
     }
+  }
+  .label-mobile {
+    display: none;
+    font-size: 12px;
+    margin-bottom: 2px;
   }
 }
 .order-history-tab {

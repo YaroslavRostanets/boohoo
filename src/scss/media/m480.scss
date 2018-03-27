@@ -191,7 +191,86 @@
       td {
         font-size: 12px;
       }
-
+    }
+  }
+  .order-history-tab {
+    .order-top {
+      flex-wrap: wrap;
+      &>table {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &>.black-btn {
+        width: 100%;
+      }
+    }
+    .order-history-wrap {
+      max-height: 150vh;
+    }
+  }
+  .profile-main {
+    h1 {
+      margin: 0 0 15px;
+    }
+    .account-tab-content {
+      .form-wrapper {
+        margin: 0 0 15px;
+      }
+    }
+    .form-wrapper {
+      margin: 15px auto 0;
+      .select-wrap {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+      }
+      .month-wrap {
+        padding: 0;
+      }
+      .message {
+        width: 100%;
+        display: block;
+        max-width: none;
+      }
+      .year-wrap {
+        margin-bottom: 10px;
+      }
+      .gender-wrap {
+        margin-bottom: 10px;
+      }
+      .form-accept {
+        button {
+          width: 100%;
+        }
+      }
+      .privacy-agreement {
+        text-align: left;
+      }
+    }
+    .black-btn {
+      width: 100%;
+    }
+  }
+  .wishlist-tab {
+    .image-contain {
+      padding-left: 0;
+      padding-top: 15px;
+    }
+    .price-total-wrap {
+      padding-left: 0;
+    }
+    .date-added {
+      padding-left: 0;
+      width: 44%;
+    }
+    .item-details-action {
+      flex-direction: column;
+      a {
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

@@ -212,11 +212,41 @@
     .profile-tab-content {
       width: 75%;
     }
+    .account-tab-content {
+      fieldset {
+        width: 100%;
+      }
+    }
   }
   .order-history-tab {
     .one-order {
       .black-btn {
         width: 165px;
+      }
+    }
+  }
+  .wishlist-tab {
+    th {
+      display: none;
+    }
+    .bottom-control {
+      right: 0;
+      .js-quantity {
+        margin: 0 5px;
+        padding: 10px 5px;
+      }
+    }
+    .std-btn {
+      font-size: 10px;
+    }
+    .item-details-action {
+      display: flex;
+      flex-direction: column;
+    }
+    .variations {
+      margin-top: 7px;
+      .attribute {
+        padding-bottom: 0;
       }
     }
   }
