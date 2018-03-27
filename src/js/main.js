@@ -290,7 +290,7 @@ $(document).ready(function(){
     });
     $('.js-global-accordion-header').eq(0).click();
 
-    $(".product-primary-image").elevateZoom({
+    $(".product-primary-image img").elevateZoom({
         zoomWindowWidth: 500,
         zoomWindowHeight: 500
     });

@@ -539,7 +539,7 @@
         <div class="primary-content">
             <div class="product-col-1 product-image-container">
                 <div class="product-thumbnails-container">
-                    <a href="javascript:void(0);" class="one-thumb">
+                    <a href="javascript:void(0);" class="one-thumb active">
                         <img src="dist/img/content/product.jpeg" alt="">
                     </a>
                     <a href="javascript:void(0);" class="one-thumb">
@@ -549,8 +549,8 @@
                         <img src="dist/img/content/product2.jpeg" alt="">
                     </a>
                 </div>
-                <a href="#" data-zoom-image="dist/img/content/product.jpeg" class="product-primary-image">
-                    <img src="dist/img/content/product.jpeg" alt="">
+                <a href="#" class="product-primary-image">
+                    <img src="dist/img/content/product.jpeg" data-zoom-image="dist/img/content/product.jpeg" alt="">
                 </a>
                 <h2 class="product-name mobile">
                     Lily Wide Sleeve Checked Tape Sweat Dress
@@ -580,7 +580,7 @@
                             </div>
                             <div class="value">
                                 <ul class="swatches color">
-                                    <li>
+                                    <li class="selected">
                                         <span>
                                             <img src="dist/img/content/texture.jpg" alt="">
                                         </span>
@@ -609,7 +609,7 @@
                                             8
                                         </span>
                                     </li>
-                                    <li>
+                                    <li class="selected">
                                         <span>
                                             10
                                         </span>
@@ -625,7 +625,7 @@
                                         </span>
                                     </li>
                                 </ul>
-                                <a href="#" class="size-chart-link std-btn">
+                                <a href="#sizes-modal" rel="modal:open" class="size-chart-link std-btn">
                                     Таблица размеров
                                 </a>
                             </div>
@@ -667,7 +667,7 @@
                             <p>
                                 <em>
                                     <strong>Steal the style top spot in
-                                    a statement separate from the tops collection</strong>
+                                        a statement separate from the tops collection</strong>
                                 </em>
                             </p>
                             <p>
@@ -703,7 +703,8 @@
                         <div class="tab-content">
                             <div class="html-slot-container">
                                 <p><span style="color:#DE006C;"><span style="font-size:16px;"><strong>£1 NEXT DAY DELIVERY*</strong></span></span><br>
-                                    <span style="font-size:14px; text-transform: capitalize;">Hurry Ends Soon! Use code: <u><strong style="text-transform: uppercase;"> GETONE</strong></u></span></p>
+                                    <span style="font-size:14px; text-transform: capitalize;">Hurry Ends Soon! Use code: <u><strong
+                                            style="text-transform: uppercase;"> GETONE</strong></u></span></p>
                                 <p><span style="font-size:10px;">*Postcode Exclusions Apply. See T&amp;Cs. </span></p>
                                 <span style="color:#DE006C;"><span style="font-size:16px;"><strong>FREE STANDARD DELIVERY OVER £25</strong></span></span>
                                 <br>
@@ -721,7 +722,9 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            UK Standard Delivery (<a href="http://www.boohoo.com/premier/PREMIER.html" target="_blank" class="font-underline">FREE with boohoo PREMIER</a>)
+                                            UK Standard Delivery (<a href="http://www.boohoo.com/premier/PREMIER.html"
+                                                                     target="_blank" class="font-underline">FREE with
+                                            boohoo PREMIER</a>)
                                         </td>
                                         <td>
                                             Up to 5 working days. Free when you spend over £25!
@@ -1390,7 +1393,7 @@
             <div class="product-add-to-cart">
                 <form action="#">
                     <div class="availability-web">
-                        <div class="label">AVAILABILITY: </div>
+                        <div class="label">AVAILABILITY:</div>
                         <div class="stock"> IN STOCK</div>
                     </div>
                     <div class="bot-modal-cart">
@@ -1408,6 +1411,358 @@
     <!--<a href="#" rel="modal:close">Close</a>-->
 </div>
 <!--конец модалка Купить -->
+
+<!--Таблица размеров модалка-->
+<div id="sizes-modal" class="sizes-modal modal modal-size" style="display: block;">
+    <div id="message_name">Таблица размеров</div>
+    <div id="message_box">
+        <div style="" id="size_div" class="">
+            <ul class="Tabs">
+                <li>Калькулятор размеров</li>
+            </ul>
+            <div class="tabs_div">
+                <div class="tab_1 lvl_1" style="display: block; ">
+                    <div class="pop_left pop_calc">
+                        <div id="sizes_table">
+                            <div class="tabs_blue_left">
+                                1.1. Выберите линию продукта...
+                            </div>
+                            <div class="s_lines">
+                                <select size="1" id="product-line">
+                                    <option value="0">---------</option>
+                                    <option value="1210">Denim Женщины</option>
+                                    <option value="1310">Denim Мужчины</option>
+                                    <option value="0210">Женщины</option>
+                                    <option value="0310">Мужчины</option>
+                                </select>
+                            </div>
+                            <div class="tabs_blue_left">
+                                1.2. Выберите товарную группу...
+                            </div>
+                            <div class="s_lines">
+                                <select size="1" id="group">
+                                    <option value="0">---------</option>
+                                    <option value="0310-0001">Футболка, Топ, Толстовка, Пулловер</option>
+                                    <option value="0310-0002">Куртка, Рубашка</option>
+                                    <option value="0310-0003">Брюки, Джинсы</option>
+                                </select>
+                            </div>
+                            <div class="tabs_blue_left">
+                                1.3. Укажите ваши размеры...
+                            </div>
+                            <div class="s_lines">
+                                <span>Объем груди</span>
+                                <select size="1" id="breast" class="size_small" disabled="disabled">
+                                    <option value="0">---------</option>
+                                </select>
+                            </div>
+                            <div class="s_lines">
+                                <span>Объем талии</span>
+                                <select size="1" id="waist" class="size_small" disabled="disabled">
+                                    <option value="0">---------</option>
+                                </select>
+                            </div>
+                            <div class="s_lines">
+                                <span>Объем бедер</span>
+                                <select size="1" id="hips" class="size_small" disabled="disabled">
+                                    <option value="0">---------</option>
+                                </select>
+                            </div>
+                            <div class="s_lines size_total">
+                                <span>Ваш размер</span>
+                                <div class="size_blue">
+                                    <div id="0210-0001">
+                                        <div class="hidden" style="display: none; ">
+                                            RU 38/40 (GR XXS)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 40/42 (GR XS)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 42/44 (GR S)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 44/46 (GR M)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 46/48 (GR L)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 48/50 (GR XL)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 50/52 (GR XXL)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 52/54 (GR XXXL)
+                                        </div>
+                                    </div>
+                                    <div id="0210-0002">
+                                        <div class="hidden" style="display: none; ">
+                                            RU 38/40 (GR XXS)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 40/42 (GR XS)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 42/44 (GR S)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 44/46 (GR M)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 46/48 (GR L)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 48/50 (GR XL)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 50/52 (GR XXL)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 52/54 (GR XXXL)
+                                        </div>
+                                    </div>
+                                    <div id="0210-0003">
+                                        <div class="hidden" style="display: none; ">
+                                            RU 38/40 (GR 32)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 40/42 (GR 34)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 42/44 (GR 36)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 44/46 (GR 38)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 46/48 (GR 40)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 48/50 (GR 42)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 50/52 (GR 44)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 52/54 (GR 46)
+                                        </div>
+                                    </div>
+                                    <div id="0210-0004">
+                                        <div class="hidden" style="display: none; ">
+                                            RU 38/40 (GR 32)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 40/42 (GR 34)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 42/44 (GR 36)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 44/46 (GR 38)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 46/48 (GR 40)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 48/50 (GR 42)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 50/52 (GR 44)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 52/54 (GR 46)
+                                        </div>
+                                    </div>
+                                    <div id="0210-0005">
+                                        <div class="hidden" style="display: none; ">
+                                            RU 40/42 (GR 25)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 42 (GR 26)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 42/44 (GR 27)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 44 (GR 28)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 44/46 (GR 29)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 46 (GR 30)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 46/48 (GR 31)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 48 (GR 32)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 48/50 (GR 33)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 50/52 (GR 34)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 52/54 (GR 36)
+                                        </div>
+                                    </div>
+                                    <div id="0210-0006">
+                                        <div class="hidden" style="display: none; ">
+                                            RU 38/40 (GR 32)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 40/42 (GR 34)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 42/44 (GR 36)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 44/46 (GR 38)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 46/48 (GR 40)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 48/50 (GR 42)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 50/52 (GR 44)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 52/54 (GR 46)
+                                        </div>
+                                    </div>
+                                    <div id="0310-0001">
+                                        <div class="hidden" style="display: none; ">
+                                            RU 44 (GR XS)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 46 (GR S)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 48 (GR M)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">
+                                            RU 50 (GR L)
+                                        </div>
+                                        <div class="hidden" style="display: none; ">RU 52 (GR XL)</div>
+                                        <div class="hidden" style="display: none; ">RU 54 (GR XXL)</div>
+                                        <div class="hidden" style="display: none; ">RU 56 (GR XXXL)</div>
+                                    </div>
+                                    <div id="0310-0002">
+                                        <div class="hidden" style="display: none; ">RU 44 (GR XS)</div>
+                                        <div class="hidden" style="display: none; ">RU 46 (GR S)</div>
+                                        <div class="hidden" style="display: none; ">RU 48 (GR M)</div>
+                                        <div class="hidden" style="display: none; ">RU 50 (GR L)</div>
+                                        <div class="hidden" style="display: none; ">RU 52 (GR XL)</div>
+                                        <div class="hidden" style="display: none; ">RU 54 (GR XXL)</div>
+                                        <div class="hidden" style="display: none; ">RU 56 (GR XXXL)</div>
+                                    </div>
+                                    <div id="0310-0003">
+                                        <div class="hidden" style="display: none; ">GR 26</div>
+                                        <div class="hidden" style="display: none; ">GR 27</div>
+                                        <div class="hidden" style="display: none; ">RU 44 (GR 28)</div>
+                                        <div class="hidden" style="display: none; ">RU 44/46 (GR 29)</div>
+                                        <div class="hidden" style="display: none; ">RU 46 (GR 30)</div>
+                                        <div class="hidden" style="display: none; ">RU 46/48 (GR 31)</div>
+                                        <div class="hidden" style="display: none; ">RU 48 (GR 32)</div>
+                                        <div class="hidden" style="display: none; ">RU 48/50 (GR 33)</div>
+                                        <div class="hidden" style="display: none; ">RU 50 (GR 34)</div>
+                                        <div class="hidden" style="display: none; ">RU 50/52 (GR 36)</div>
+                                        <div class="hidden" style="display: none; ">RU 52/54 (GR 38)</div>
+                                        <div class="hidden" style="display: none; ">RU 54/56 (GR 40)</div>
+                                        <div class="hidden" style="display: none; ">GR 42</div>
+                                        <div class="hidden" style="display: none; ">GR 44</div>
+                                    </div>
+                                    <div id="1210-0001">
+                                        <div class="hidden" style="display: none; ">RU 38/40 (GR XXS/32)</div>
+                                        <div class="hidden" style="display: none; ">RU 40/42 (GR XS/34)</div>
+                                        <div class="hidden" style="display: none; ">RU 42/44 (GR S/36)</div>
+                                        <div class="hidden" style="display: none; ">RU 44/46 (GR M/38)</div>
+                                        <div class="hidden" style="display: none; ">RU 46/48 (GR L/40)</div>
+                                        <div class="hidden" style="display: none; ">RU 48/50 (GR XL/42)</div>
+                                    </div>
+                                    <div id="1210-0002">
+                                        <div class="hidden" style="display: none; ">RU 38/40 (GR XXS/32)</div>
+                                        <div class="hidden" style="display: none; ">RU 40/42 (GR XS/34)</div>
+                                        <div class="hidden" style="display: none; ">RU 42/44 (GR S/36)</div>
+                                        <div class="hidden" style="display: none; ">RU 44/46 (GR M/38)</div>
+                                        <div class="hidden" style="display: none; ">RU 46/48 (GR L/40)</div>
+                                        <div class="hidden" style="display: none; ">RU 48/50 (GR XL/42)</div>
+                                    </div>
+                                    <div id="1210-0003">
+                                        <div class="hidden" style="display: none; ">RU 38/40 (GR XXS/32)</div>
+                                        <div class="hidden" style="display: none; ">RU 40/42 (GR XS/34)</div>
+                                        <div class="hidden" style="display: none; ">RU 42/44 (GR S/36)</div>
+                                        <div class="hidden" style="display: none; ">RU 44/46 (GR M/38)</div>
+                                        <div class="hidden" style="display: none; ">RU 46/48 (GR L/40)</div>
+                                        <div class="hidden" style="display: none; ">RU 48/50 (GR XL/42)</div>
+                                    </div>
+                                    <div id="1210-0004">
+                                        <div class="hidden" style="display: none; ">RU 40 (GR 24)</div>
+                                        <div class="hidden" style="display: none; ">RU 40/42 (GR 25)</div>
+                                        <div class="hidden" style="display: none; ">RU 42 (GR 26)</div>
+                                        <div class="hidden" style="display: none; ">RU 42/44 (GR 27)</div>
+                                        <div class="hidden" style="display: none; ">RU 44 (GR 28)</div>
+                                        <div class="hidden" style="display: none; ">RU 44/46 (GR 29)</div>
+                                        <div class="hidden" style="display: none; ">RU 46 (GR 30)</div>
+                                        <div class="hidden" style="display: none; ">RU 46/48 (GR 31)</div>
+                                        <div class="hidden" style="display: none; ">RU 48 (GR 32)</div>
+                                        <div class="hidden" style="display: none; ">RU 48/50 (GR 33)</div>
+                                    </div>
+                                    <div id="1210-0005">
+                                        <div class="hidden" style="display: none; ">RU 38/40 (GR XXS/32)</div>
+                                        <div class="hidden" style="display: none; ">RU 40/42 (GR XS/34)</div>
+                                        <div class="hidden" style="display: none; ">RU 42/44 (GR S/36)</div>
+                                        <div class="hidden" style="display: none; ">RU 44/46 (GR M/38)</div>
+                                        <div class="hidden" style="display: none; ">RU 46/48 (GR L/40)</div>
+                                        <div class="hidden" style="display: none; ">RU 48/50 (GR XL/42)</div>
+                                    </div>
+                                    <div id="1310-0001">
+                                        <div class="hidden" style="display: none; ">RU 44 (GR XS)</div>
+                                        <div class="hidden" style="display: none; ">RU 46 (GR S)</div>
+                                        <div class="hidden" style="display: none; ">RU 48 (GR M)</div>
+                                        <div class="hidden" style="display: none; ">RU 50 (GR L)</div>
+                                        <div class="hidden" style="display: none; ">RU 52 (GR XL)</div>
+                                        <div class="hidden" style="display: none; ">RU 54 (GR XXL)</div>
+                                    </div>
+                                    <div id="1310-0002">
+                                        <div class="hidden" style="display: none; ">RU 44 (GR XS)</div>
+                                        <div class="hidden" style="display: none; ">RU 46 (GR S)</div>
+                                        <div class="hidden" style="display: none; ">RU 48 (GR M)</div>
+                                        <div class="hidden" style="display: none; ">RU 50 (GR L)</div>
+                                        <div class="hidden" style="display: none; ">RU 52 (GR XL)</div>
+                                        <div class="hidden" style="display: none; ">RU 54 (GR XXL)</div>
+                                    </div>
+                                    <div id="1310-0003">
+                                        <div class="hidden" style="display: none; ">RU 44/46 (GR 29)</div>
+                                        <div class="hidden" style="display: none; ">RU 46 (GR 30)</div>
+                                        <div class="hidden" style="display: none; ">RU 46/48 (GR 31)</div>
+                                        <div class="hidden" style="display: none; ">RU 48 (GR 32)</div>
+                                        <div class="hidden" style="display: none; ">RU 48/50 (GR 33)</div>
+                                        <div class="hidden" style="display: none; ">RU 50 (GR 34)</div>
+                                        <div class="hidden" style="display: none; ">RU 50/52 (GR 36)</div>
+                                        <div class="hidden" style="display: none; ">RU 52/54 (GR 38)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs_blue_right">Как правильно определить размеры</div>
+                    <!--<div class="tabs_right sizes_right">-->
+                        <!--<img src="/styles/images/xsizes.jpg.pagespeed.ic.87dzZcUnhK.jpg">-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--конец Таблица размеров модалка-->
 
 <script src="dist/libs/jquery.formstyler.min.js"></script>
 <script src="https://use.fontawesome.com/35f65baac5.js"></script>

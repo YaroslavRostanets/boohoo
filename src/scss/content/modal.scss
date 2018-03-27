@@ -189,3 +189,48 @@
     }
   }
 }
+.modal-size {
+  border-radius: 0;
+  width: 550px;
+  border: 1px solid #eee;
+  display: none;
+  padding: 0;
+  #message_name {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background: #eee;
+    height: 40px;
+    font-weight: 700;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  #message_box {
+    padding: 20px 25px;
+  }
+  .Tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    li {
+      border-bottom: 1px solid #EEEEEE;
+      padding-bottom: 4px;
+    }
+  }
+  .tabs_blue_left {
+    background: #EEEEEE;
+    padding: 5px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .s_lines {
+    margin-bottom: 10px;
+    select {
+      width: 100%;
+      display: block;
+      height: 25px;
+    }
+  }
+}
