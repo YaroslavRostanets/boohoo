@@ -1102,7 +1102,7 @@
                             <a href="#" class="product-image">
                                 <img src="dist/img/content/product.jpg" alt="">
                                 <object>
-                                    <a href="#modal-buy" rel="modal:open" class="quickview">Купить</a>
+                                    <a href="#modal-buy" class="js-open-modal quickview">Купить</a>
                                 </object>
                             </a>
                             <a href="#" class="product-name">
@@ -1476,22 +1476,46 @@
 <div id="modal-buy" class="modal modal-buy">
     <div class="detail-main">
         <div class="product-col-1">
-            <a href="javascript:void(0);" class="product-primary-image">
-                <img src="dist/img/content/modal-detail.jpeg" alt="">
-            </a>
-            <div class="product-thumbnails-container">
-                <a href="#" class="one-thumb">
-                    <img src="dist/img/content/modal-detail.jpeg" alt="">
-                </a>
-                <a href="#" class="one-thumb">
+            <div class="product-primary-image js-product-primary-image">
+                <div class="item">
+                    <img src="dist/img/content/modal-detail.jpeg"
+                         data-zoom-image="dist/img/content/modal-detail.jpeg" alt="">
+                </div>
+                <div class="item">
                     <img src="dist/img/content/modal-detail2.jpeg" alt="">
-                </a>
-                <a href="#" class="one-thumb">
+                </div>
+                <div class="item">
                     <img src="dist/img/content/modal-detail3.jpeg" alt="">
-                </a>
-                <a href="#" class="one-thumb">
+                </div>
+                <div class="item">
                     <img src="dist/img/content/modal-detail4.jpeg" alt="">
-                </a>
+                </div>
+                <div class="item">
+                    <img src="dist/img/content/modal-detail3.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="dist/img/content/modal-detail4.jpeg" alt="">
+                </div>
+            </div>
+            <div class="product-thumbnails-container">
+                <div class="one-thumb">
+                    <img src="dist/img/content/modal-detail.jpeg" alt="">
+                </div>
+                <div class="one-thumb">
+                    <img src="dist/img/content/modal-detail2.jpeg" alt="">
+                </div>
+                <div class="one-thumb">
+                    <img src="dist/img/content/modal-detail3.jpeg" alt="">
+                </div>
+                <div class="one-thumb">
+                    <img src="dist/img/content/modal-detail4.jpeg" alt="">
+                </div>
+                <div class="one-thumb">
+                    <img src="dist/img/content/modal-detail3.jpeg" alt="">
+                </div>
+                <div class="one-thumb">
+                    <img src="dist/img/content/modal-detail4.jpeg" alt="">
+                </div>
             </div>
         </div>
         <div class="product-col-2">

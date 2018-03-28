@@ -1,3 +1,6 @@
+.blocker {
+  z-index: 99;
+}
 .modal-buy {
   border-radius: 0;
   padding: 20px;
@@ -29,6 +32,12 @@
     width: 100%;
     display: block;
     margin-bottom: 15px;
+    &:hover {
+      border: 1px solid #000;
+    }
+    &.slick-current {
+      border: 1px solid #000;
+    }
     img {
       display: block;
       width: 100%;
@@ -186,6 +195,20 @@
       color: #FFFFFF;
       flex-grow: 1;
       margin-left: 25px;
+    }
+  }
+  .slick-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 100%;
+    cursor: pointer;
+    i {
+      font-size: 25px;
+    }
+    &.next {
+      margin-top: -10px;
     }
   }
 }

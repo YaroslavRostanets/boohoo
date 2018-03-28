@@ -290,10 +290,64 @@ $(document).ready(function(){
     });
     $('.js-global-accordion-header').eq(0).click();
 
-    $(".product-primary-image img").elevateZoom({
+    $(".product-primary-image ").elevateZoom({
         zoomWindowWidth: 500,
         zoomWindowHeight: 500
     });
+
+    var modalSliderOption = {
+        vertical: ( $(window).width() > 1024 ) ? true : false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.js-product-primary-image',
+        infinite: false,
+        arrows: true,
+        focusOnSelect: true,
+        prevArrow: "<a class='arrow prev'><i class='fa fa-angle-up'></i></a>",
+        nextArrow: "<a class='arrow next'><i class='fa fa-angle-down'></i></a>",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    };
+    var modalThumbOption = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        infinite: false,
+        asNavFor: '.product-thumbnails-container',
+    };
+
+    $('a.js-open-modal').click(function(event) {
+        $(this).modal({
+            fadeDuration: 250,
+        });
+        return false;
+    });
+
+    $('#modal-buy').on($.modal.OPEN, function(event, modal) {
+        $('.js-product-primary-image').slick(modalThumbOption);
+        $('.product-thumbnails-container').slick(modalSliderOption);
+        $('.js-product-primary-image').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $.removeData($('img'), 'elevateZoom');
+            $('.zoomContainer').remove();
+            $(this).find('.slick-current img').elevateZoom();
+        });
+    });
+
+    $('#modal-buy').on($.modal.CLOSE, function(event, modal) {
+        $('.js-product-primary-image').slick('unslick');
+        $('.product-thumbnails-container').slick('unslick');
+        $.removeData($('img'), 'elevateZoom');
+        $('.zoomContainer').remove();
+    });
+
     /*--конец карточка товара--*/
 
     /*--Вы смотрели/может заинтересовать слайдер --*/
@@ -304,6 +358,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         prevArrow: "<a class='arrow prev'><i class='icon-menu-arrow-left'></i></a>",
         nextArrow: "<a class='arrow next'><i class='icon-menu-arrow-right'></i></a>",
+        asNavFor: '.slider',
         responsive: [
             {
                 breakpoint: 1300,
