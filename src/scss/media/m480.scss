@@ -290,4 +290,16 @@
       }
     }
   }
+  .modal-size {
+    width: 100%;
+    height: 100vh;
+    #message_box {
+      height: 100%;
+      max-height: none;
+    }
+    a.close-modal {
+      top: 0;
+      right: 0;
+    }
+  }
 }

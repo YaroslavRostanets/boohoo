@@ -233,6 +233,8 @@
   }
   #message_box {
     padding: 20px 25px;
+    max-height: 75vh;
+    overflow-y: auto;
   }
   .Tabs {
     list-style: none;
@@ -253,10 +255,31 @@
   }
   .s_lines {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    & > span {
+      display: block;
+      width: 135px;
+      font-size: 11px;
+    }
     select {
       width: 100%;
       display: block;
       height: 25px;
+    }
+  }
+  .tabs_blue_right {
+    background: #EEE;
+    padding: 5px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .size-img {
+    img {
+      display: block;
+      width: 100%;
     }
   }
 }

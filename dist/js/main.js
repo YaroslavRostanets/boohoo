@@ -331,6 +331,13 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.js-size-chart-link').click(function(event) {
+        $(this).modal({
+            fadeDuration: 250,
+        });
+        return false;
+    });
+
     $('#modal-buy').on($.modal.OPEN, function(event, modal) {
         $('.js-product-primary-image').slick(modalThumbOption);
         $('.product-thumbnails-container').slick(modalSliderOption);
@@ -359,7 +366,6 @@ $(document).ready(function(){
         slidesToScroll: 1,
         prevArrow: "<a class='arrow prev'><i class='icon-menu-arrow-left'></i></a>",
         nextArrow: "<a class='arrow next'><i class='icon-menu-arrow-right'></i></a>",
-        asNavFor: '.slider',
         responsive: [
             {
                 breakpoint: 1300,

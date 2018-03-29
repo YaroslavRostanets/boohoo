@@ -722,7 +722,7 @@
     }
   }
   .modal-buy {
-    width: 450px;
+    width: 430px;
     padding: 15px;
     .detail-main {
       flex-direction: column;
@@ -807,5 +807,8 @@
     .label-mobile {
       display: block;
     }
+  }
+  .modal-size {
+    width: 430px;
   }
 }
