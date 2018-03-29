@@ -273,4 +273,21 @@
       }
     }
   }
+  .modal-buy {
+    width: 100%;
+    a.close-modal {
+      right: 0;
+      top: 0;
+    }
+  }
+  .blocker {
+    padding: 0;
+  }
+  .primary-content {
+    .search-result-content {
+      .grid-tile {
+        width: 50%;
+      }
+    }
+  }
 }

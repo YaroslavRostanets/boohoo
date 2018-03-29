@@ -721,6 +721,30 @@
       padding: 10px;
     }
   }
+  .modal-buy {
+    width: 450px;
+    padding: 15px;
+    .detail-main {
+      flex-direction: column;
+    }
+    .product-col-1 {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    .product-col-2 {
+      width: 100%;
+    }
+    .bot-modal-cart {
+      .add-to-cart {
+        margin-left: 10px;
+        padding: 7px;
+      }
+    }
+    .wishlist-button {
+      margin-left: 10px;
+    }
+  }
 }
 @media (max-width: 600px) {
   .wishlist-tab {

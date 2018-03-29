@@ -6,6 +6,9 @@
   padding: 20px;
   width: 950px;
   max-width: none;
+  .size {
+    flex-wrap: wrap;
+  }
   .detail-main {
     display: flex;
   }
