@@ -62,6 +62,8 @@ $(document).ready(function(){
         $('h3.js-filter-toggle').on('click', filterCategoryMobileOpen);
         $('.js-close-filter-contain').on('click', filterCategoryMobileClose);
         $('.refinements-wrapper .refinement>div').mCustomScrollbar('destroy');
+
+        $('.checkout-mini-cart').mCustomScrollbar(); //Скролл в оформлении заказа
     }
 
     function runTablet(){
@@ -73,6 +75,9 @@ $(document).ready(function(){
         // $('.js-filter-toggle').unbind('click', filterOpen);
         // $(document).unbind('mouseup', filterClose);
         //$('.js-filter-toggle').closest('.refinement').addClass('opened');
+
+        $('.checkout-mini-cart').mCustomScrollbar(); //Скролл в оформлении заказа
+        $('.js-mini-cart-products, .search-window').mCustomScrollbar(); //Поиск, корзина скролл
     }
 
     function runDesctop(){
@@ -81,6 +86,9 @@ $(document).ready(function(){
         $('.refinements-wrapper .refinement>div').mCustomScrollbar('destroy');
         $('.js-filter-toggle').on('click', filterOpen);
         $(document).on('mouseup', filterClose);
+
+        $('.checkout-mini-cart').mCustomScrollbar(); //Скролл в оформлении заказа
+        $('.js-mini-cart-products, .search-window').mCustomScrollbar(); //Поиск, корзина скролл
     }
 
     $(window).getDevice(768,1024);
@@ -173,8 +181,6 @@ $(document).ready(function(){
     }, function(){
         $('.mini-cart-content').fadeOut(100);
     });
-
-    $('.js-mini-cart-products, .search-window').mCustomScrollbar();
 
     /*--конец малая корзина--*/
 
@@ -432,4 +438,11 @@ $(document).ready(function(){
        $('.social-sharing-panel').show();
     });
     /*--конец Личный кабинет--*/
+
+    /*--оформление заказа--*/
+    $('.js-add-comment').on('click', function(){
+        $('.js-checkout-comment').show();
+    });
+
+    /*--конец Оформление заказа--*/
 });

@@ -579,21 +579,6 @@ header {
       color: #808080;
     }
   }
-  .mCSB_scrollTools {
-    .mCSB_draggerRail {
-      background-color: #C0C0C0;
-    }
-    .mCSB_draggerRail {
-      width: 4px;
-    }
-    .mCSB_dragger .mCSB_dragger_bar {
-      background-color: #808080;
-    }
-    .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
-    .mCSB_dragger:active .mCSB_dragger_bar {
-      background-color: #808080;
-    }
-  }
 }
 .search-window {
   position: absolute;

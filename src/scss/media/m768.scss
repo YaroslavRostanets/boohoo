@@ -745,6 +745,26 @@
       margin-left: 10px;
     }
   }
+  .checkout-main {
+    padding-bottom: 30px;
+    .checkout-main-in {
+      flex-wrap: wrap;
+    }
+    .user-info {
+      width: 100%;
+      margin-right: 0;
+    }
+    fieldset {
+      max-width: 560px;
+    }
+    .checkout-info-column {
+      width: 100%;
+    }
+    .send-order {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 @media (max-width: 600px) {
   .wishlist-tab {
@@ -810,5 +830,50 @@
   }
   .modal-size {
     width: 430px;
+  }
+  .checkout-main {
+    h2 {
+      font-size: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+      label {
+        width: 100%;
+        margin-bottom: 4px;
+      }
+      .regular-input {
+        width: 100%;
+      }
+      .help-block {
+        width: 100%;
+      }
+    }
+    fieldset {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .delivery-list, .pay-list {
+      .one-type {
+        width: 100%;
+        margin: 0 0 15px 0 !important;
+        height: 65px;
+        flex-direction: row;
+        padding: 15px !important;
+        .img-cont {
+          height: 100%;
+          margin-bottom: 0;
+        }
+      }
+      .delivery-prop {
+        margin-top: 0;
+      }
+    }
+    .send-order {
+      margin-top: 0;
+      padding: 0 12px;
+      .black-btn {
+        width: 100%;
+      }
+    }
   }
 }

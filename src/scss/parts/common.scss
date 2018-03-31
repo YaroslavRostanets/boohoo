@@ -90,7 +90,26 @@ a {
   &:hover, &:active {
     background: #333333;
   }
+  &.disabled {
+    background: #AAAAAA;
+    border: 1px solid #AAAAAA;
+  }
 }
 .zoomContainer {
     z-index: 99
+}
+.mCSB_scrollTools {
+  .mCSB_draggerRail {
+    background-color: #C0C0C0;
+  }
+  .mCSB_draggerRail {
+    width: 4px;
+  }
+  .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #808080 !important;
+  }
+  .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+  .mCSB_dragger:active .mCSB_dragger_bar {
+    background-color: #808080 !important;
+  }
 }

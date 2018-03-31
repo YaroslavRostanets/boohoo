@@ -303,6 +303,70 @@
       }
     }
   }
+  .checkout-main {
+    fieldset {
+      width: 100%;
+    }
+    .form-group {
+      label {
+        width: 110px;
+      }
+      .help-block {
+        width: calc(100% - 110px);
+      }
+      .regular-input {
+        width: calc(100% - 110px);
+      }
+    }
+    .delivery-list,.pay-list {
+      .one-type {
+        height: 135px;
+      }
+    }
+    .delivery-prop {
+      .regular-input {
+        width: 100%;
+      }
+    }
+    .checkout-info-column {
+      width: 320px;
+    }
+    .user-info {
+      width: calc( 100% - 320px );
+    }
+  }
+  .checkout-view {
+    .checkout-order-totals {
+      padding: 10px;
+    }
+    .checkout-mini-cart {
+      padding: 10px 0 10px 10px;
+      max-height: 292px;
+    }
+    .qty-price {
+      .product-price {
+
+      }
+    }
+    .subtotal {
+      font-size: 13px;
+    }
+    .delivery {
+      font-size: 13px;
+    }
+    .total {
+      font-size: 15px;
+      td {
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+    }
+    .all-text {
+      td {
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
