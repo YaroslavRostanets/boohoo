@@ -310,6 +310,37 @@
     padding-top: 30px;
     margin-bottom: 65px;
   }
+  .prod-thumbnails-container {
+    width: 120px;
+    min-width: 120px;
+    .one-thumb {
+      width: 100%;
+      margin-bottom: 7px;
+      margin-top: 6px;
+    }
+    .arrow {
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      display: block;
+      cursor: pointer;
+      background: transparent;
+      transition: all 0.1s ease;
+      &:hover {
+        background: rgba(241,241,241,0.7);
+      }
+    }
+  }
+  .product-primary-image-cont {
+    width: calc( 100% - 140px );
+
+    .prod-large-img {
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
 }
 .tabs-container {
   .one-tab-content {

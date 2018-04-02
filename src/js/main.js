@@ -362,6 +362,38 @@ $(document).ready(function(){
         $('.zoomContainer').remove();
     });
 
+
+    var pageSliderOption = {
+        vertical: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-primary-image-cont',
+        infinite: false,
+        arrows: true,
+        focusOnSelect: true,
+        prevArrow: "<a class='arrow prev'><i class='fa fa-angle-up'></i></a>",
+        nextArrow: "<a class='arrow next'><i class='fa fa-angle-down'></i></a>",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    };
+    var pageThumbOption = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        infinite: false,
+        asNavFor: '.prod-thumbnails-container',
+    };
+
+    $('.product-primary-image-cont').slick(pageThumbOption);
+    $('.prod-thumbnails-container').slick(pageSliderOption);
     /*--конец карточка товара--*/
 
     /*--Вы смотрели/может заинтересовать слайдер --*/
