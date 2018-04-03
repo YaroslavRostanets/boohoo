@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="dist/libs/slick.css">
     <link rel="stylesheet" href="dist/libs/jquery.formstyler.css">
     <link rel="stylesheet" href="dist/libs/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="dist/libs/jquery.modal.min.css">
     <link rel="stylesheet" href="dist/css/main.min.css">
     <script
             src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -546,7 +547,7 @@
                             <input type="password" class="regular-input">
                         </div>
                         <div class="password-reset-wrapper">
-                            <a href="#" class="password-reset">
+                            <a href="#forgot-password-modal" rel="modal:open" class="password-reset">
                                 Forgot your password?
                             </a>
                         </div>
@@ -733,10 +734,31 @@
         </div>
     </div>
 </footer>
+<!--Напомнить пароль-->
+<div id="forgot-password-modal" class="modal forgot-password-modal">
+    <h3 class="modal-title">
+        Forgot password?
+    </h3>
+    <h4>Request to Reset Your Password</h4>
+    <p>Provide your account email address
+        to receive an email to reset your password.</p>
+    <form action="#">
+        <div class="form-group">
+            <label for="">Email Address: </label>
+            <div class="flex">
+                <input type="text" class="regular-input">
+                <button class="std-btn black-btn">Send</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!--Конец Напомнить пароль-->
 <script src="dist/libs/jquery.formstyler.min.js"></script>
 <script src="https://use.fontawesome.com/35f65baac5.js"></script>
 <script src="dist/libs/jquery.mCustomScrollbar.min.js"></script>
 <script src="dist/libs/slick.min.js"></script>
+<script src="dist/libs/jquery.modal.min.js"></script>
+<script src="dist/libs/jquery.elevateZoom-3.0.8.min.js"></script>
 <script src="dist/js/main.js"></script>
 </body>
 </html>

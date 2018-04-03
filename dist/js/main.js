@@ -402,11 +402,24 @@ $(document).ready(function(){
         arrows: false,
         fade: false,
         infinite: false,
-        asNavFor: '.prod-thumbnails-container',
+        asNavFor: '.prod-thumbnails-container'
     };
 
     $('.product-primary-image-cont').slick(pageThumbOption);
     $('.prod-thumbnails-container').slick(pageSliderOption);
+
+    var zoomConfig = {
+        zoomWindowWidth: 600,
+        zoomWindowHeight: 600
+    };
+    $('.product-primary-image-cont .slick-current img').elevateZoom(zoomConfig);
+
+    $('.product-primary-image-cont').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        $('.zoomContainer').remove();
+        $(this).removeData('elevateZoom');
+        $(this).removeData('zoomImage');
+        $(this).find('.slick-current img').elevateZoom(zoomConfig);
+    });
     /*--конец карточка товара--*/
 
     /*--Вы смотрели/может заинтересовать слайдер --*/
