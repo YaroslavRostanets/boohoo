@@ -70,6 +70,43 @@
         }
       }
     }
+    .product-primary-image-cont {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .prod-thumbnails-container {
+      width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+      .slick-arrow.prev {
+        left: -30px;
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        .fa {
+          transform: rotate(-90deg) translate(60%,-30%);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
+      }
+      .slick-arrow.next {
+        right: -30px;
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        .fa {
+          transform: rotate(-90deg) translate(60%,-30%);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
+      }
+      .one-thumb {
+        margin: 0 7px;
+      }
+    }
   }
-
 }

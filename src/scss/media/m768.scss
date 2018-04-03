@@ -642,6 +642,12 @@
         }
       }
     }
+    .prod-thumbnails-container {
+      width: calc( 100% - 60px );
+    }
+    .product-additional-info {
+      margin-bottom: 15px;
+    }
   }
   .zoomContainer {
     display: none !important;

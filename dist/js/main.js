@@ -375,10 +375,23 @@ $(document).ready(function(){
         nextArrow: "<a class='arrow next'><i class='fa fa-angle-down'></i></a>",
         responsive: [
             {
+                breakpoint: 1300,
+                settings: {
+                    vertical: false
+                }
+            },
+            {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
+                    vertical: false,
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 860,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 2
                 }
             }
         ]
