@@ -36,8 +36,11 @@
     &:hover {
       border: 1px solid #808080;
     }
-    &.active {
+    &.slick-current {
       border: 1px solid #808080;
+    }
+    &:focus, &:active {
+      outline: none;
     }
     img {
       display: block;
