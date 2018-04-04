@@ -74,7 +74,7 @@
     }
   }
 }
-.wishlist-tab {
+.wishlist-tab, .order-history-cont {
   .section-header {
     display: flex;
     align-items: flex-start;
@@ -322,7 +322,7 @@
     margin-bottom: 2px;
   }
 }
-.order-history-tab {
+.order-history-tab, .order-history-cont {
   .section-header {
     font-size: 24px;
     margin: 0 0 30px 0;
@@ -352,9 +352,23 @@
 .start-profile-page {
   .cols {
     display: flex;
-    width: 100%;
+    flex-grow: 1;
     margin-left: -20px;
     margin-right: -20px;
+  }
+  .account-controls {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    h4 {
+      margin: 0 0 10px 0;
+    }
+    .std-btn {
+      margin-top: -4px;
+      width: 180px;
+    }
   }
   .account-box {
     .section-header {
@@ -379,15 +393,78 @@
     .account-box-content {
       padding: 30px 15px;
       display: flex;
+      flex-grow: 1;
+      font-size: 13px;
       .img-cont {
         width: 80px;
         height: auto;
+        margin-right: 20px;
         img {
           display: block;
           width: 100%;
           height: auto;
         }
       }
+    }
+  }
+  .account-text {
+    p {
+      margin: 0 0 5px 0;
+    }
+    .account-box-label {
+      font-weight: 700;
+    }
+  }
+  .wishlist-item-image {
+    width: 110px;
+    height: 165px;
+    margin-right: 10px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      width: auto;
+      display: block;
+    }
+  }
+  .wish-title {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 10px !important;
+  }
+  .account-wishlist-item {
+    display: flex;
+  }
+  .wishlist-item-info {
+    font-size: 13px;
+    .name {
+      font-weight: 600;
+    }
+  }
+  .account-text {
+    width: 100%;
+  }
+  .hot {
+    margin-right: 12px;
+    margin-left: 7px;
+    color: #ff3737;
+  }
+  .through {
+    text-decoration: line-through;
+  }
+  .is-in-stock {
+    color: #e6007e;
+    margin-top: 8px;
+  }
+  .js-add-to-cart {
+    width: 200px;
+    margin-left: auto;
+    display: block;
+  }
+  .order-history-cont {
+    padding-top: 20px;
+    tr {
+      border-bottom: none;
     }
   }
 }
