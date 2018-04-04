@@ -896,4 +896,26 @@
       width: 100%;
     }
   }
+  .start-profile-page {
+    .account-controls {
+      flex-wrap: wrap;
+      .std-btn {
+        width: 100%;
+      }
+    }
+    .cols {
+      flex-wrap: wrap;
+    }
+    .account-box {
+      width: 100%;
+    }
+    .order-history-cont {
+      .order-top {
+        flex-direction: column;
+        table {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }
