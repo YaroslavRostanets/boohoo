@@ -503,4 +503,28 @@ $(document).ready(function(){
     });
 
     /*--конец Оформление заказа--*/
+
+    /*--подняться на верх--*/
+    (function( $ ) {
+        $.fn.goToTop = function() {
+            var _this = $(this);
+            _this.hide();
+            $(document).scroll(function(){
+                var windowHeigh = $(window).height();
+                var contTop = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
+                if (windowHeigh > contTop){
+                    _this.fadeOut();
+                } else {
+                    _this.fadeIn();
+                }
+            });
+            $(this).click(function(){
+                var scroll_pos=(0);
+                $('html, body').animate({scrollTop:(scroll_pos)}, '2000');
+            });
+        };
+    })(jQuery);
+
+    $('#js-go-to-top').goToTop();
+    /*--конец подняться на верх--*/
 });

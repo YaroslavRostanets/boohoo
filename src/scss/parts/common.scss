@@ -113,3 +113,17 @@ a {
     background-color: #808080 !important;
   }
 }
+#js-go-to-top {
+  bottom: 50px;
+  right: 50px;
+  position: fixed;
+  font-size: 30px;
+  background: #ECECEC;
+  padding: 15px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFFFFF;
+}
