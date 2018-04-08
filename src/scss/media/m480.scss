@@ -302,4 +302,40 @@
       right: 0;
     }
   }
+  .search-main {
+    h2 {
+      font-size: 22px;
+    }
+    .no-hits-search {
+      width: 100%;
+      margin-top: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    input[type=text] {
+      font-size: 18px;
+    }
+    .search-recommended-categories-wrapper {
+      h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      .search-recommended-categories {
+        .one-cat {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .descr {
+          padding-top: 10px;
+        }
+      }
+    }
+    .search-recommendations {
+      padding-top: 0;
+      h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+    }
+  }
 }

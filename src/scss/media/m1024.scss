@@ -367,6 +367,18 @@
       }
     }
   }
+  .search-tablet {
+    padding: 15px 20px 20px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    a {
+      color: gray;
+    }
+    .search-results-count-txt {
+      color: gray;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

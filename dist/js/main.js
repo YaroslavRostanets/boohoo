@@ -527,6 +527,69 @@ $(document).ready(function(){
 
     $('#js-go-to-top').goToTop();
     /*--конец подняться на верх--*/
+
+    /*--Страница поиска слайдер--*/
+    $('.js-best-sellers').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: "<a class='arrow prev'><i class='icon-menu-arrow-left'></i></a>",
+        nextArrow: "<a class='arrow next'><i class='icon-menu-arrow-right'></i></a>",
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 885,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 380,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    /*--конец Страница поиска слайдер--*/
+
+    /*--Фиксированный хедер--*/
+    if($('.js-fixed-header').length){
+        $(window).on('scroll', function () {
+            var headerHeight = $('.js-fixed-header').outerHeight();
+            console.log('headerHeight', headerHeight);
+            console.log('scroll', $(window).scrollTop());
+            if($(window).scrollTop() > headerHeight){
+                $('body').addClass('fixed-header');
+                $('.js-main').css({
+                    'padding-top': headerHeight + 'px'
+                })
+            } else {
+                $('body').removeClass('fixed-header');
+                $('.js-main').css({
+                    'padding-top': 0 + 'px'
+                })
+            }
+        });
+    }
+
+    $(window).resize(function () {
+       $(window).scroll();
+    });
+
+    $(window).scroll();
+    /*--конец Фиксированый хедер--*/
 });
 window.sizesEvents=function() {
     var sizes = {

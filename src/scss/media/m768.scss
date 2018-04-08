@@ -771,6 +771,16 @@
       text-align: center;
     }
   }
+  .search-main {
+    .search-recommended-categories-wrapper {
+      .search-recommended-categories {
+        flex-wrap: wrap;
+        .one-cat {
+          width: calc( 50% - 10px );
+        }
+      }
+    }
+  }
 }
 @media (max-width: 600px) {
   .wishlist-tab {
@@ -917,5 +927,9 @@
         }
       }
     }
+  }
+  .search-tablet {
+    text-align: center;
+    padding-bottom: 15px;
   }
 }

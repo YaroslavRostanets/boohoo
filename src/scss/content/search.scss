@@ -1,0 +1,114 @@
+.search-result-keyword-wrapper {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.search-tablet {
+  display: none;
+}
+.search-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+  max-width: 1358px;
+  margin-bottom: 10px;
+  min-height: 200px;
+  clear: both;
+  padding-top: 25px;
+  h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 0 22px 0;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+    margin: 16px 0;
+  }
+  .no-hits-search {
+    width: 420px;
+    margin: 30px auto;
+    form {
+      display: block;
+      width: 100%;
+    }
+    input[type="text"] {
+      padding: 11px 0 3px 10px;
+      font-size: 20px;
+      border: none;
+      border-bottom: solid 1px #000;
+      width: calc(100% - 50px);
+    }
+    .header-search-btn {
+      background: #FFFFFF;
+      font-size: 25px;
+      border: none;
+    }
+  }
+  .search-recommended-categories-wrapper {
+    h2 {
+      text-align: left;
+      font-size: 26px;
+      padding-top: 15px;
+      font-weight: 700;
+    }
+    .search-recommended-categories {
+      display: flex;
+      justify-content: space-between;
+      .one-cat {
+        width: calc(25% - 20px);
+      }
+      .img-cont {
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+      .descr {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 700;
+        text-transform: none;
+        text-align: center;
+      }
+    }
+  }
+  .search-recommendations {
+    padding-top: 30px;
+    overflow: hidden;
+    h2 {
+      text-align: left;
+      font-size: 26px;
+      padding-top: 15px;
+      font-weight: 700;
+    }
+    .search-result-content {
+      width: auto;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    .slick-arrow {
+      position: absolute;
+      top: calc(50% - 80px);
+      z-index: 9;
+      font-size: 30px;
+      cursor: pointer;
+      &.prev {
+        left: 20px;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &.next {
+        right: 20px;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
