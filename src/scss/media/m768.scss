@@ -276,16 +276,15 @@
       }
     }
   }
-  .full-banner {
+  .full-banner, .three-banners, .two-banners {
+    margin-bottom: 20px;
     img {
       display: none;
     }
     .is-mobile {
       display: block;
+      margin: 0 auto;
     }
-  }
-  .full-banner, .three-banners, .two-banners {
-    margin-bottom: 20px;
     a {
       img {
         margin: 0 auto;
