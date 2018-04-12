@@ -487,6 +487,10 @@ $(document).ready(function(){
 
     $('.std-slider').slick(stdOptions);
 
+    /*--каталог Просмотренные товары--*/
+    $('.js-product-listing').slick(stdOptions);
+    /*--конец каталог Просмотренные товары--*/
+
     $('.tab-label').on('click', function(e){
         e.preventDefault();
         var activeTab = $(this).attr('href');
