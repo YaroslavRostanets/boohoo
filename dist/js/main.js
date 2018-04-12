@@ -393,6 +393,27 @@ $(document).ready(function(){
                     vertical: false,
                     slidesToShow: 2
                 }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 540,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 2
+                }
             }
         ]
     };

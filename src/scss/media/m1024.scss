@@ -379,6 +379,20 @@
       color: gray;
     }
   }
+  .product-additional-info {
+    .product-pricing {
+      flex-direction: column;
+      align-items: center;
+      .product-sales-price {
+        margin-top: 0;
+        margin-right: 0;
+        font-size: 14px;
+      }
+    }
+    .product-standard-price {
+      font-size: 14px;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
