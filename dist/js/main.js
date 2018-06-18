@@ -177,7 +177,9 @@ $(document).ready(function(){
 
     /*--малая корзинаа--*/
     $('.js-mini-cart-total').hover(function(){
-        $('.mini-cart-content').fadeIn(100);
+        if($(this).has(".mini-cart-product").length){
+            $('.mini-cart-content').fadeIn(100);
+        }
     }, function(){
         $('.mini-cart-content').fadeOut(100);
     });
