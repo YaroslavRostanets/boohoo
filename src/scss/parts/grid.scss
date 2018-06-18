@@ -30,6 +30,11 @@
       max-width: 100%;
     }
   }
+  img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 .col-2 {
   width: 50%;
@@ -42,6 +47,11 @@
       max-width: 100%;
     }
   }
+  img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 .full-banner {
   margin-bottom: 40px;
@@ -52,7 +62,13 @@
 }
 .two-banners {
   margin-bottom: 40px;
+  .is-mobile {
+    display: none;
+  }
 }
 .three-banners {
   margin-bottom: 40px;
+  .is-mobile {
+    display: none;
+  }
 }
