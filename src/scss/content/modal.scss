@@ -124,6 +124,14 @@
   .size {
     display: flex;
     justify-content: space-between;
+    li {
+      min-width: 32px;
+      height: 32px;
+      width: auto;
+      span {
+        padding: 0 3px;
+      }
+    }
   }
   .size-chart-link {
     span {

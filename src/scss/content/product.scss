@@ -142,7 +142,7 @@
             span {
               border: 1px solid #FFF;
             }
-            border: 1px solid #000;
+            border: 2px solid #000;
           }
           &.unselectable {
             position: relative;
@@ -165,12 +165,12 @@
           }
         }
         span {
-          padding: 0 2px;
+          padding: 0 3px;
           display: flex;
           align-items: center;
           justify-content: center;
           text-align: center;
-          width: 32px;
+          min-width: 32px;
           height: 32px;
         }
       }
