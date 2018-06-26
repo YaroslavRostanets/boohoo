@@ -67,7 +67,6 @@ $(document).ready(function(){
     }
 
     function runTablet(){
-        // console.log(state.device);
         $('h3.js-filter-toggle').unbind('click', filterCategoryMobileOpen);
         $('.js-close-filter-contain').unbind('click', filterCategoryMobileClose);
         $('.refinements-wrapper .refinement>div').mCustomScrollbar();
@@ -435,13 +434,19 @@ $(document).ready(function(){
         zoomWindowWidth: 600,
         zoomWindowHeight: 600
     };
-    $('.product-primary-image-cont .slick-current img').elevateZoom(zoomConfig);
+
+    if( $(window).width() > 1024 ) {
+        $('.product-primary-image-cont .slick-current img').elevateZoom(zoomConfig);
+    }
 
     $('.product-primary-image-cont').on('afterChange', function (event, slick, currentSlide, nextSlide) {
         $('.zoomContainer').remove();
         $(this).removeData('elevateZoom');
         $(this).removeData('zoomImage');
-        $(this).find('.slick-current img').elevateZoom(zoomConfig);
+        if( $(window).width() > 1024 ) {
+            $(this).find('.slick-current img').elevateZoom(zoomConfig);
+        }
+
     });
     /*--конец карточка товара--*/
 
@@ -595,8 +600,6 @@ $(document).ready(function(){
     if($('.js-fixed-header').length){
         $(window).on('scroll', function () {
             var headerHeight = $('.js-fixed-header').outerHeight();
-            console.log('headerHeight', headerHeight);
-            console.log('scroll', $(window).scrollTop());
             if($(window).scrollTop() > headerHeight){
                 $('body').addClass('fixed-header');
                 $('.js-main').css({
@@ -617,4 +620,26 @@ $(document).ready(function(){
 
     $(window).scroll();
     /*--конец Фиксированый хедер--*/
+
+    $('.mobile-search-btn, .js-close-search').on('click', function(){
+        function closeSearch() {
+            $('.mobile-search-btn').removeClass('opened');
+            $('body').removeClass('lock');
+            $('.search-bg').remove();
+            $('.mobile-search').fadeOut(100);
+        }
+
+        if( $('.mobile-search-btn').hasClass('opened') ){
+            closeSearch();
+        } else {
+            $('.mobile-search-btn').addClass('opened');
+            $('body').append('<div class="search-bg"></div>').addClass('lock');
+            $('.search-bg').click(function(){
+                closeSearch();
+            });
+            $('.mobile-search').fadeIn(100);
+        }
+
+    });
+
 });
