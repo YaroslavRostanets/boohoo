@@ -348,7 +348,9 @@ $(document).ready(function(){
     $('#modal-buy').on($.modal.OPEN, function(event, modal) {
         $('.js-product-primary-image').slick(modalThumbOption);
         $('.product-thumbnails-container').slick(modalSliderOption);
-        $('.js-product-primary-image .slick-current [data-zoom-image]').elevateZoom();
+        if( $(window).width() > 768 ){
+            $('.js-product-primary-image .slick-current [data-zoom-image]').elevateZoom();
+        }
         $('.js-product-primary-image').on('afterChange', function(event, slick, currentSlide, nextSlide){
             $.removeData($('img'), 'elevateZoom');
             $('.zoomContainer').remove();
@@ -600,8 +602,6 @@ $(document).ready(function(){
     if($('.js-fixed-header').length){
         $(window).on('scroll', function () {
             var headerHeight = $('.js-fixed-header').outerHeight();
-            console.log('headerHeight', headerHeight);
-            console.log('scroll', $(window).scrollTop());
             if($(window).scrollTop() > headerHeight){
                 $('body').addClass('fixed-header');
                 $('.js-main').css({
