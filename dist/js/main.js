@@ -644,6 +644,12 @@ $(document).ready(function(){
 
     });
 
+    $('.menu-vertical').each(function(i, item){
+        if($(item).find('ul > li').length > 12){
+            $(item).find('ul').addClass('two-cols');
+        }
+    });
+
 });
 window.sizesEvents=function() {
     var sizes = {

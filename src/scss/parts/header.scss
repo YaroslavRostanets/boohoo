@@ -425,6 +425,13 @@ header {
       list-style: none;
       padding-left: 0;
     }
+    .two-cols {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+      }
+    }
   }
   .user-info {
     position: relative;
